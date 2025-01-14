@@ -1,0 +1,84 @@
+@import "./mixins.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $white;
+  color: $black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+button {
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+.main {
+  padding: 40px 0 200px;
+
+  &_pb-100 {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 20px 0 20px;
+  }
+}
