@@ -30,18 +30,6 @@ const Slider = () => {
                 </div>    
             </div>
         </div>
-        // <div className="slider" style={{
-        //     backgroundImage: `url(${isHovered ? bgImageHeader : sliderImageTwo})`,
-        //     backgroundRepeat: 'no-repeat',
-        //     backgroundSize: 'contain'
-        // }}>
-        //     <div className="slider-block">
-        //         <img src={sliderIconOne} alt="иконка" />
-        //         <div onMouseEnter={() => setIsHovered(true)}
-        //              onMouseLeave={() => setIsHovered(false)}
-        //             className="slider-square"/>
-        //     </div>
-        // </div>
     )
 }
 export default Slider;

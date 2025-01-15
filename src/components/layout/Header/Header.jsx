@@ -1,7 +1,6 @@
 import '../Header/Header.scss';
 import Nav from './Nav';
 import logotypeIIcentre from '../../../assets/img/icons/logotypeIIcentre.svg';
-import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
