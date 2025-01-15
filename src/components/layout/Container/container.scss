@@ -1,0 +1,25 @@
+@import '../../../assets/styles/vars.scss';
+
+.container {
+  width: 1150px;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $laptop) {
+    width: 1022px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 670px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  &_reading-page {
+    max-width: 1024px;
+  }
+}

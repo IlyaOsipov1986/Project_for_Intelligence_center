@@ -1,135 +1,135 @@
 @mixin base-11 {
     font-size: 11px;
-  }
+}
   
-  @mixin medium {
-    font-weight: 500;
-  }
+@mixin medium {
+  font-weight: 600;
+}
   
-  @mixin h1 {
-    font-weight: 500;
-    font-size: 48px;
-  }
+@mixin h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
   
-  @mixin h2 {
-    font-weight: 500;
-    font-size: 40px;
-  }
+@mixin h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+@mixin h3 {
+  font-weight: 700;
+  font-size: 36px;
+}
   
-  @mixin h3 {
-    font-weight: 700;
-    font-size: 36px;
-  }
-  
-  @mixin h4 {
-    font-weight: 500;
-    font-size: 32px;
-    @media (max-width: $mobile) {
-      font-size: 14px;
-    }
-  }
-  
-  @mixin h5 {
-    font-weight: 500;
-    font-size: 24px;
-  }
-  
-  @mixin h6 {
-    font-weight: 700;
-    font-size: 20px;
-  }
-  
-  @mixin h7 {
-    font-weight: 500;
-    font-size: 18px;
-  }
-  
-  @mixin h8 {
-    font-weight: 500;
-    font-size: 16px;
-    @media (max-width: $mobile) {
-      font-size: 14px;
-    }
-  }
-  
-  @mixin body-large {
-    font-weight: 400;
-    font-size: 20px;
-  }
-  
-  @mixin body-default {
-    font-weight: 400;
-    font-size: 16px;
-  }
-  
-  @mixin body-small {
-    font-weight: 400;
+@mixin h4 {
+  font-weight: 500;
+  font-size: 32px;
+  @media (max-width: $mobile) {
     font-size: 14px;
   }
+}
   
-  @mixin body-smaller {
-    font-weight: 400;
-    font-size: 12px;
-  }
+@mixin h5 {
+  font-weight: 500;
+  font-size: 24px;
+}
   
-  @mixin body-least {
-    font-weight: 400;
-    font-size: 11px;
-  }
+@mixin h6 {
+  font-weight: 600;
+  font-size: 20px;
+}
   
-  @mixin base-24 {
-    font-size: 24px;
-  }
+@mixin h7 {
+  font-weight: 500;
+  font-size: 18px;
+}
   
-  @mixin base-20 {
-    font-size: 20px;
-  
-    @media (max-width: $mobile) {
-      font-size: 14px;
-    }
-  }
-  
-  @mixin base-18 {
-    font-size: 18px;
-  }
-  
-  @mixin base-16 {
-    font-size: 16px;
-  }
-  
-  @mixin base-14 {
+@mixin h8 {
+  font-weight: 500;
+  font-size: 16px;
+  @media (max-width: $mobile) {
     font-size: 14px;
   }
-  
-  @mixin base-12 {
-    font-size: 12px;
+}
+
+@mixin body-large {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@mixin body-default {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@mixin body-small {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@mixin body-smaller {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@mixin body-least {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+@mixin base-24 {
+  font-size: 24px;
+}
+
+@mixin base-20 {
+  font-size: 20px;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
   }
-  
-  @mixin base-11 {
-    font-size: 11px;
-  }
-  
-  @mixin base-10 {
-    font-size: 10px;
-  }
-  
-  @mixin regular {
-    font-weight: 400;
-  }
-  
-  @mixin medium {
-    font-weight: 500;
-  }
-  
-  @mixin bold {
-    font-weight: 700;
-  }
-  
-  @mixin text-gray {
-    color: $gray;
-  }
-  
-  @mixin text-blue {
-    color: $default;
-  }
+}
+
+@mixin base-18 {
+  font-size: 18px;
+}
+
+@mixin base-16 {
+  font-size: 16px;
+}
+
+@mixin base-14 {
+  font-size: 14px;
+}
+
+@mixin base-12 {
+  font-size: 12px;
+}
+
+@mixin base-11 {
+  font-size: 11px;
+}
+
+@mixin base-10 {
+  font-size: 10px;
+}
+
+@mixin regular {
+  font-weight: 400;
+}
+
+@mixin medium {
+  font-weight: 600;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin text-gray {
+  color: $gray;
+}
+
+@mixin text-blue {
+  color: $default;
+}
   

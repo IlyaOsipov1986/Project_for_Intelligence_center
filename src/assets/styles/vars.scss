@@ -1,43 +1,24 @@
-$primary1000: #25769c;
-$primary900: #2a82ac;
-$primary800: #2e8dbc;
-$primary700: #3399cc;
-$primary600: #52a8d5;
-$primary500: #70b7dd;
-$primary400: #8fc7e6;
-$primary300: #aed6ee;
-$primary200: #cce5f7;
-$primary100: #ebf4ff;
+$primary700: #383A41;
+$primary500: #8C959E;
+$primary300: #CEDBE7;
+
+$secondary600: #AC3639;
+$secondary300: #C74E4E;
 
 $default: $primary700;
-$hover: $primary500;
-$pressed: $primary900;
-$disabled: $primary100;
+$default2: $secondary600;
+$hover: $secondary600;
+$pressed: $primary300;
+$disabled: $primary300;
 
-$secondary1000: #000000;
-$secondary900: #1d1d1d;
-$secondary800: #3a3a3a;
-$secondary700: #565656;
-$secondary600: #737373;
-$secondary500: #909090;
-$secondary400: #adadad;
-$secondary300: #cacaca;
-$secondary200: #e7e7e7;
-$secondary100: #f5f5f5;
+$tertiaryError: #FF6E8C;
+$tertiaryOkey: #00D1B4;
+$tertiaryAttention: #FF9900;
 
-$default2: $secondary100;
-$hover2: $secondary200;
-$pressed2: $secondary300;
-$disabled2: $secondary500;
-
-$tertiaryError: #ff6e8c;
-$tertiaryOkey: #00d1b4;
-$tertiaryAttention: #ff9900;
-
-$white: #ffffff;
-$ghostWhite: #f9fbff;
-$gray: #909090;
-$black: #1d1d1d;
+$white: #FFFFFF;
+$ghostWhite: #F9FBFF;
+$gray: #F7F8F9;
+$black: #1D1D1D;
 $white-opacity: rgba(255, 255, 255, 0.5);
 
 $laptop: 1362px;
