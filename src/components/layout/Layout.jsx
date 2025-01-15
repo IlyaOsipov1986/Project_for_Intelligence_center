@@ -1,17 +1,18 @@
 import { Outlet } from "react-router-dom";
-import Container from "./Container/Container"; 
 import Header from "./Header/Header";
 import Footer from "../layout/Footer/Footer";
+import Contacts from "./Contacts/Contacts";
+import Slider from "../ui/Slider/Slider";
 
 const Layout = () => {
     return (
         <div className="App">
             <Header />
+            <Slider/>
             <main className="main">
-                <Container>
-                    <Outlet />
-                </Container>
+              <Outlet />
             </main>
+            <Contacts/>
             <Footer />
       </div>
     )

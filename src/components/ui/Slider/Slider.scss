@@ -1,0 +1,17 @@
+.slider {
+    max-width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1920px;
+}
+.slider-block {
+    display: inline-flex;
+    gap: 238px;
+}
+.slider-square {
+    width: 578px;
+    height: 711px;
+}

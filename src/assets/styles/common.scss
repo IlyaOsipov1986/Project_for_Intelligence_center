@@ -67,12 +67,12 @@ img {
 .App {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
   grid-template-columns: 100%;
 }
 
 .main {
-  padding: 132px 0 200px;
+  padding: 132px 0 0;
 
   &_pb-100 {
     padding-bottom: 100px;
@@ -82,6 +82,7 @@ img {
     padding: 20px 0 20px;
   }
 }
+
 .link {
   display: inline-flex;
   align-items: center;

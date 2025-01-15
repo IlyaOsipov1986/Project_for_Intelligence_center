@@ -1,9 +1,15 @@
+import Container from "../../components/layout/Container/Container"; 
+
 const HomePage = () => {
     
     return (
-        <div>
-            Home
-        </div>
+        <>
+            <Container>
+                <div>
+                    HomePage
+                </div>
+            </Container>
+        </>
     )
 }
 export default HomePage;
