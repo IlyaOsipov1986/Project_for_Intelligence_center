@@ -2,21 +2,46 @@ import "../Slider/Slider.scss";
 import bgImageHeader from "../../../assets/img/bgImageHeader.jpg";
 import sliderImageTwo from "../../../assets/img/sliderImageTwo.png";
 import sliderIconOne from "../../../assets/img/icons/sliderIconOne.svg";
+import { useState } from "react";
 
 const Slider = () => {
 
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <div className="slider" style={{
-            background: `url(${sliderImageTwo})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain'
-        }}>
+        <div className="slider-headline">
             <div className="slider-block">
-                <img src={sliderIconOne} alt="иконка" />
-                <div className="slider-square">
-                </div>
+                    <img src={sliderIconOne} alt="иконка" />
+                    <div onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        className="slider-square"/>
+            </div>
+            <div className="slider-headline__wrap">
+                <div className="slider-headline__image">
+                    <img style={{
+                            backgroundImage: `url(${isHovered ? bgImageHeader : sliderImageTwo})`,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'bottom',
+                            width: '100%',
+                            height: '100%'
+                        }}
+                    />
+                </div>    
             </div>
         </div>
+        // <div className="slider" style={{
+        //     backgroundImage: `url(${isHovered ? bgImageHeader : sliderImageTwo})`,
+        //     backgroundRepeat: 'no-repeat',
+        //     backgroundSize: 'contain'
+        // }}>
+        //     <div className="slider-block">
+        //         <img src={sliderIconOne} alt="иконка" />
+        //         <div onMouseEnter={() => setIsHovered(true)}
+        //              onMouseLeave={() => setIsHovered(false)}
+        //             className="slider-square"/>
+        //     </div>
+        // </div>
     )
 }
 export default Slider;
