@@ -1,5 +1,6 @@
 import "../Slider/Slider.scss";
 import bgImageHeader from "../../../assets/img/bgImageHeader.jpg";
+import sliderImageOne from "../../../assets/img/sliderImageOne.png";
 import sliderImageTwo from "../../../assets/img/sliderImageTwo.png";
 import sliderIconOne from "../../../assets/img/icons/sliderIconOne.svg";
 import { useState } from "react";
@@ -18,8 +19,8 @@ const Slider = () => {
             </div>
             <div className="slider-headline__wrap">
                 <div className="slider-headline__image">
-                    <img style={{
-                            backgroundImage: `url(${isHovered ? bgImageHeader : sliderImageTwo})`,
+                    <img src={isHovered ? sliderImageOne : sliderImageTwo} style={{
+                            // backgroundImage: `url(${isHovered ? sliderImageOne : sliderImageTwo})`,
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
                             backgroundPosition: 'bottom',

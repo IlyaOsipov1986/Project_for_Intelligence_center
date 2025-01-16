@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 243px 1fr;
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item4 item4";
+}
+
+.item {
+    padding: 20px;
+    text-align: center; 
+}
+
+.image-item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.image-item img {
+    width: 400px;
+    max-width: 100%; 
+    height: auto;
+}

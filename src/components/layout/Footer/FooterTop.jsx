@@ -1,21 +1,24 @@
+import React from "react";
 import { footerData  } from "../../../config";
+import FooterCard from '../Footer/FooterCard';
+import Container from "../../layout/Container/Container";
 
 const FooterTop = () => {
     return (
         <section className="footer-top">
-            <div className="footer-nav">
-                <div className="footer-nav-item">    
+            <Container>
+                <div className="footer-nav">
+                        {footerData.map((el) => {
+                        return (
+                            <React.Fragment key={el.id}>
+                                <FooterCard
+                                    {...el}
+                                />
+                            </React.Fragment>
+                            )
+                        })}
                 </div>
-                {footerData.map((el) => {
-                    return (
-                        <div key={el.id} className="footer-nav-item">
-                            {el.title}
-                        </div>
-                    )
-                })}
-                <div className="footer-nav-item">
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }
