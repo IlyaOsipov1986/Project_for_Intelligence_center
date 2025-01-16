@@ -1,27 +1,34 @@
 import Container from "../Container/Container";
+import Divaider from "../../ui/Divaider/Divaider";
 import '../Contacts/Contacts.scss';
+import buttonRedRow from "../../../assets/img/icons/buttonRedRow.svg";
 import contactsLogoIICentre from "../../../assets/img/icons/contactsLogoIICentre.svg";
 
 const Contacts = () => {
     return (
-        <Container>
-            <div className="grid-container">
-                <div className="item1"></div>
-                <div className="item2"></div>
-                <div className="item3"></div>
-                <div className="item4">
-                    <div>
-                        1
+        <>
+            <Divaider/>
+            <Container>
+                <div className="contacts__grid-container">
+                    <div className="contacts__grid-item1"></div>
+                    <div className="contacts__grid-item2"></div>
+                    <div className="contacts__grid-item3"></div>
+                    <div className="contacts__grid-row-bottom">
+                        <div className="contacts__grid-row-bottom__item">
+                            <img src={buttonRedRow} alt=""/>
+                            <h2>Telegram</h2>
+                        </div>
+                        <div className="contacts__grid-row-bottom__item">
+                            <img src={buttonRedRow} alt=""/>
+                            <h2>Vkontakte</h2>
+                        </div>
                     </div>
-                    <div>
-                        2
+                    <div className="contacts__grid-image-item">
+                        <img src={contactsLogoIICentre} alt="картинка" />
                     </div>
                 </div>
-                <div className="image-item">
-                    <img src={contactsLogoIICentre} alt="картинка" />
-                </div>
-            </div>
-        </Container>
+            </Container>
+        </>
     )
 }
 export default Contacts;
