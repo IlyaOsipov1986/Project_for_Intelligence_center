@@ -6,7 +6,7 @@ const Container = ({ children, addClass = "" }) => {
     const containerClass = classNames({
         container: true,
         [`${addClass}`]: addClass,
-      });
+    });
     return <div className={containerClass}>{children}</div>;
 };
 
