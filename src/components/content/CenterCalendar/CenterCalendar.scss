@@ -1,0 +1,10 @@
+@import "../../../assets/styles/vars.scss";
+
+.center-calendar__container {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-bottom: 1px solid $primary300;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}

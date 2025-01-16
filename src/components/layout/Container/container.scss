@@ -5,8 +5,7 @@
   padding: 0 15px;
   max-width: 100%;
   margin: 0 auto;
-  box-sizing: content-box;
-
+ 
   @media (max-width: $laptop) {
     width: 1022px;
   }
@@ -23,4 +22,9 @@
   &_reading-page {
     max-width: 1024px;
   }
+}
+
+.container__add-border {
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
 }

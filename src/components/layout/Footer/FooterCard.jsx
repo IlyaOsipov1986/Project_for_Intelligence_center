@@ -3,7 +3,7 @@ const FooterCard = ({...item}) => {
     return (
         <div className="footer-nav-item">
             <img src={item.icon} alt="иконка"/>
-            <h7>{item.title}</h7>
+            <span>{item.title}</span>
             <p>{item.text}</p>
             {item.link && (
                 <a href="">{item.link}</a>

@@ -1,5 +1,4 @@
 import "../Slider/Slider.scss";
-import bgImageHeader from "../../../assets/img/bgImageHeader.jpg";
 import sliderImageOne from "../../../assets/img/sliderImageOne.png";
 import sliderImageTwo from "../../../assets/img/sliderImageTwo.png";
 import sliderIconOne from "../../../assets/img/icons/sliderIconOne.svg";

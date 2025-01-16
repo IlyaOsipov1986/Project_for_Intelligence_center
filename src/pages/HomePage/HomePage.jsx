@@ -1,15 +1,12 @@
-import Container from "../../components/layout/Container/Container"; 
+import Container from "../../components/layout/Container/Container";
+import CenterCalendar from "../../components/content/CenterCalendar/CenterCalendar"; 
 
 const HomePage = () => {
     
     return (
-        <>
-            <Container>
-                <div>
-                    HomePage
-                </div>
-            </Container>
-        </>
+        <Container>
+            <CenterCalendar/>
+        </Container>
     )
 }
 export default HomePage;

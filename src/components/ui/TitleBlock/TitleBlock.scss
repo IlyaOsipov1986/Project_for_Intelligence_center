@@ -1,0 +1,13 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/vars.scss";
+
+.title-block__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    h2 {
+        @include h2;
+    }
+}
