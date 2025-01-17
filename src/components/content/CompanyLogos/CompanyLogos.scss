@@ -1,0 +1,10 @@
+@import "../../../assets/styles/vars.scss";
+
+.company-logos__container {
+    display: flex;
+    padding: 40px 0 40px 0;
+    gap: 60px;
+    justify-content: center;
+    border-left:1px solid $primary300;
+    border-right:1px solid $primary300;
+}

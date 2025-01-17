@@ -6,8 +6,6 @@ import SocialNetworksBlock from "../../ui/SocialNetworksBlock/SocialNetworksBloc
 
 const CalendarEvents = () => {
     
-    const lengthData = calendarEventsData?.length;
-
     return (
         <div className="calendar-events__container">
             <div className="calendar-events__content">
@@ -19,7 +17,6 @@ const CalendarEvents = () => {
                                 <React.Fragment key={el.id}>
                                     <CalendarEventsRow
                                         item={el}
-                                        lengthData={lengthData}
                                     />
                                 </React.Fragment>
                                 )

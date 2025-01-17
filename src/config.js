@@ -5,6 +5,11 @@ import tgIconSqure from '../src/assets/img/icons/tgIconSqure.svg';
 import tgIconSqureRed from '../src/assets/img/icons/tgIconSqureRed.svg';
 import vkIconSqure from '../src/assets/img/icons/vkIconSqure.svg';
 import vkIconSqureRed from '../src/assets/img/icons/vkIconSqureRed.svg';
+import companylogoOne from '../src/assets/img/icons/companylogoOne.svg';
+import companylogoTwo from '../src/assets/img/icons/companylogoTwo.svg';
+import companylogoThree from '../src/assets/img/icons/companylogoThree.svg';
+import companylogoFour from '../src/assets/img/icons/companylogoFour.svg';
+import companylogoFive from '../src/assets/img/icons/companylogoFive.svg';
 
 export const config = {}
 
@@ -70,5 +75,23 @@ export const socialNetworksCalendarData = [
     {
         img: vkIconSqure,
         imgHover: vkIconSqureRed
+    }
+]
+
+export const listCompanyData = [
+    {
+        logo: companylogoOne
+    },
+    {
+        logo: companylogoTwo
+    },
+    {
+        logo: companylogoThree
+    },
+    {
+        logo: companylogoFour
+    },
+    {
+        logo: companylogoFive
     }
 ]

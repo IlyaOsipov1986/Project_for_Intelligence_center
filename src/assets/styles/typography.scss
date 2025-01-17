@@ -72,6 +72,10 @@
   font-size: 11px;
   
 }
+
+.base-23 {
+  font-size: 23px;
+}
   
 .base-24 {
   font-size: 24px;
@@ -137,7 +141,15 @@
   color: $default2;
 }
 
+.text-middle-gray {
+  color: $primary500;
+}
+
 .font-open-sans {
   font-family: 'Open Sans';
 }
-  
+ 
+.text-word-wrap {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
