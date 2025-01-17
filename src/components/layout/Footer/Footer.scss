@@ -38,7 +38,7 @@
     p {
       @include base-16;
       @include regular;
-      font-family: 'Open Sans';
+      @include font-open-sans;
     }
     span {
       @include h7;

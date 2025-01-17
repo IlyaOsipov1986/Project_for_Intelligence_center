@@ -3,8 +3,28 @@
 .center-calendar__container {
     display: flex;
     flex-direction: column;
-    background-color: $white;
     border-bottom: 1px solid $primary300;
     border-right: 1px solid $primary300;
     border-left: 1px solid $primary300;
+}
+
+.center-calendar__title {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.center-calendar__title > div > div:nth-child(1) {
+    border-right: 1px solid $primary300;
+    border-top: 1px solid $primary300;
+}
+
+.center-calendar__title-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.center-calendar__title-tabs {
+    display: flex;
+    align-items: end;
 }

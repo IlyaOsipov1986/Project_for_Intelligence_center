@@ -30,3 +30,15 @@ export const footerData = [
         addText: 'Университетская наб. 7-9, 199034'
     }
 ]
+
+export const tileTabsCalendarCentre = [
+    {
+        name: 'ПАРТНЕРАМ'
+    },
+    {
+        name: 'ИССЛЕДОВАНИЯ'
+    },
+    {
+        name: 'ОБРАЗОВАНИЕ'
+    }
+]

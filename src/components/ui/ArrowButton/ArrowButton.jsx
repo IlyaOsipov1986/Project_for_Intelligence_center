@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "../../ui/ArrowButton/ArrowButton.scss";
 import buttonRedRow from "../../../assets/img/icons/buttonRedRow.svg";
+import PropTypes from 'prop-types';
 
-const ArrowButton = () => {
+const ArrowButton = ({size=''}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -30,4 +31,9 @@ const ArrowButton = () => {
         </div>
     )
 }
+
+ArrowButton.propTypes = {
+    size: PropTypes.string.isRequired,
+}
+
 export default ArrowButton;
