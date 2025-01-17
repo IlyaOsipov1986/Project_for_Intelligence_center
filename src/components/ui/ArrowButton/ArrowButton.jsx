@@ -1,14 +1,23 @@
 import { useState } from "react";
+import classNames from "classnames";
 import "../../ui/ArrowButton/ArrowButton.scss";
 import buttonRedRow from "../../../assets/img/icons/buttonRedRow.svg";
 import PropTypes from 'prop-types';
 
-const ArrowButton = ({size=''}) => {
+const ArrowButton = ({
+    size=''// s - 48, m - 50
+}) => {
+    
     const [isHovered, setIsHovered] = useState(false);
+
+    const btnClass = classNames({
+        'arrow-button__wrap': true,
+        [`arrow-button_size_${size}`]: true,
+      });
 
     return (
         <div 
-            className="arrow-button__wrap"
+            className={btnClass}
             // onMouseEnter={() => setIsHovered(true)}
             // onMouseLeave={() => setIsHovered(false)}
         >
@@ -33,7 +42,7 @@ const ArrowButton = ({size=''}) => {
 }
 
 ArrowButton.propTypes = {
-    size: PropTypes.string.isRequired,
+    size: PropTypes.string,
 }
 
 export default ArrowButton;

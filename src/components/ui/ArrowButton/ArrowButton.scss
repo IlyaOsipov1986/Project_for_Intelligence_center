@@ -2,6 +2,15 @@
     position: relative;
     display: flex;
     padding: 0 1px 0 0;
+}
+
+.arrow-button_size_s {
+    img {
+        width: 48px;
+    }
+}
+
+.arrow-button_size_m {
     img {
         width: 50px;
     }

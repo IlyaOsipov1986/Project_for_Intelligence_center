@@ -4,11 +4,11 @@
     flex-direction: row;
     align-items: center;
     gap: 28px;
-    top: 50px;
+    bottom: -25px;
+}
 
-    img {
-        width: 50px;
-        cursor: pointer;
-    }
+.social-networks-block__icon {
+    width: 50px;
+    cursor: pointer;
 }
 

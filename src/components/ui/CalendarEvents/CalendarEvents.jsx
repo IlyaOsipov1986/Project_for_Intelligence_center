@@ -6,18 +6,33 @@ import SocialNetworksBlock from "../../ui/SocialNetworksBlock/SocialNetworksBloc
 
 const CalendarEvents = () => {
     
+    const lengthData = calendarEventsData?.length;
+
     return (
         <div className="calendar-events__container">
             <div className="calendar-events__content">
-                {calendarEventsData.map((el) => {
-                    return (
-                        <React.Fragment key={el.id}>
-                            <CalendarEventsRow
-                                {...el}
-                            />
-                        </React.Fragment>
+                {calendarEventsData && calendarEventsData.length > 0 ? 
+                    (
+                        <>
+                        {calendarEventsData.map((el) => {
+                             return (
+                                <React.Fragment key={el.id}>
+                                    <CalendarEventsRow
+                                        item={el}
+                                        lengthData={lengthData}
+                                    />
+                                </React.Fragment>
+                                )
+                            })}
+                        </>
                     )
-                })}
+                    :
+                    (
+                        <div>
+                            События не найдены!
+                        </div>
+                    )
+                }
                 <SocialNetworksBlock
                     activeBtn={true}
                     titleEventBtn="ВСЕ СОБЫТИЯ"

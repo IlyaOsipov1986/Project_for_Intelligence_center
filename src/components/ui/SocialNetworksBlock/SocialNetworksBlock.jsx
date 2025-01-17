@@ -6,7 +6,7 @@ import { useState } from "react";
 const SocialNetworksBlock = ({activeBtn=true, titleEventBtn='', socialData=[] }) => {
 
     const [isHovered, setIsHovered] = useState(null);
-    
+
     return (
         <div className="social-networks-block__container">
             {activeBtn && 
@@ -16,10 +16,12 @@ const SocialNetworksBlock = ({activeBtn=true, titleEventBtn='', socialData=[] })
             }
             {socialData.map((el, i) => {
                 return (
-                    <img key={i} 
-                    onMouseEnter={() => setIsHovered(i)} 
-                    onMouseLeave={() => setIsHovered(null)}
-                    src={isHovered === i ? el.imgHover : el.img} alt=""/>
+                    <img key={i}
+                        className="social-networks-block__icon" 
+                        onMouseEnter={() => setIsHovered(i)} 
+                        onMouseLeave={() => setIsHovered(null)}
+                        src={isHovered === i ? el.imgHover : el.img} alt=""
+                    />
                 )
             })}
         </div>

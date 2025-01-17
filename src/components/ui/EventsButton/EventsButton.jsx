@@ -7,7 +7,9 @@ const EventsButton = ({ title='' }) => {
     return (
         <div className='events-button'>
             <div className='events-button__title'>{title}</div>
-            <ArrowButton/>
+            <ArrowButton
+                size='s'
+            />
             <div className='events-button__add-hover-bg'/>
         </div>
     )
