@@ -1,7 +1,8 @@
 import TitleBlock from "../../ui/TitleBlock/TitleBlock";
 import TitleTabs from "../../ui/TitleTabs/TitleTabs";
+import CalendarEvents from "../../ui/CalendarEvents/CalendarEvents";
 import '../CenterCalendar/CenterCalendar.scss';
-import {tileTabsCalendarCentre} from "../../../config";
+import { titleTabsCalendarCentre } from "../../../config";
 
 const CenterCalendar = () => {
     
@@ -15,11 +16,12 @@ const CenterCalendar = () => {
                     />
                     <div className="center-calendar__title-tabs">
                         <TitleTabs
-                            tabs={tileTabsCalendarCentre}
+                            tabs={ titleTabsCalendarCentre }
                         />
                     </div>
                 </div>
             </div>
+            <CalendarEvents/>
         </div>
     )
 }

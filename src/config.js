@@ -1,6 +1,10 @@
 import contactsEmail from '../src/assets/img/icons/contactsEmail.svg';
 import contactsLocation from '../src/assets/img/icons/contactsLocation.svg';
 import contactsPhone from '../src/assets/img/icons/contactsPhone.svg';
+import tgIconSqure from '../src/assets/img/icons/tgIconSqure.svg';
+import tgIconSqureRed from '../src/assets/img/icons/tgIconSqureRed.svg';
+import vkIconSqure from '../src/assets/img/icons/vkIconSqure.svg';
+import vkIconSqureRed from '../src/assets/img/icons/vkIconSqureRed.svg';
 
 export const config = {}
 
@@ -31,7 +35,7 @@ export const footerData = [
     }
 ]
 
-export const tileTabsCalendarCentre = [
+export const titleTabsCalendarCentre = [
     {
         name: 'ПАРТНЕРАМ'
     },
@@ -40,5 +44,31 @@ export const tileTabsCalendarCentre = [
     },
     {
         name: 'ОБРАЗОВАНИЕ'
+    }
+]
+
+export const calendarEventsData = [
+    {
+        id: 0,
+        date: '24.12',
+        title: 'Безградиентные методы оптимизации для функций с гельдеровым градиентом',
+        speaker: 'Шибаев Иннокентий Андреевич (Яндекс, выпускник аспирантуры МФТИ)'
+    },
+    {
+        id: 1,
+        date: '26.12',
+        title: 'Оптимизация без границ: как обучать большие модели эффективнее',
+        speaker: 'Шибаев Иннокентий Андреевич (Яндекс, выпускник аспирантуры МФТИ)'
+    }
+]
+
+export const socialNetworksCalendarData = [
+    {
+        img: tgIconSqure,
+        imgHover: tgIconSqureRed
+    },
+    {
+        img: vkIconSqure,
+        imgHover: vkIconSqureRed
     }
 ]

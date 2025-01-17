@@ -1,0 +1,29 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/vars.scss";
+
+.calendar-events__container {
+    display: grid;
+    grid-template-rows: auto 163px;
+    border-top:1px solid $primary300;
+}
+
+.calendar-events__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 80px 40px 0 40px;
+}
+
+.calendar-events__empty-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid $primary300;
+    div {
+        width: 100%;
+    }
+}
+
+.calendar-events__empty-block > div:first-child {
+    border-right:1px solid $primary300;
+}
