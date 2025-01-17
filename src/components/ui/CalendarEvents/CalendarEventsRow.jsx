@@ -26,7 +26,9 @@ const CalendarEventsRow = ({item}) => {
                     <p>Спикер: {item.speaker}</p>
                 </div>
                 <div className="calendar-events-row__arrow-btn">
-                    {isHovered === item.id && <ArrowButton/>}
+                    {isHovered === item.id && <ArrowButton
+                        size="m"
+                    />}
                 </div>
             </div>
         </>
