@@ -3,6 +3,7 @@ import CenterCalendar from "../../components/content/CenterCalendar/CenterCalend
 import CompanyLogos from "../../components/content/CompanyLogos/CompanyLogos"; 
 import EmptyCaps from "../../components/content/EmptyCaps/EmptyCaps";
 import Divaider from "../../components/ui/Divaider/Divaider";
+import AboutCentre from "../../components/content/AboutCentre/AboutCentre";
 
 const HomePage = () => {
     
@@ -10,6 +11,9 @@ const HomePage = () => {
         <>
             <Container>
                 <CenterCalendar/>
+            </Container>
+            <Container>
+                <AboutCentre/>
             </Container>
             <Divaider/>
             <Container>

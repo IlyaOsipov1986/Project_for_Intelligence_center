@@ -1,0 +1,43 @@
+@import "../../../assets/styles/vars.scss";
+
+.about-centre__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 167px;
+    border-bottom: 1px solid $primary300;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}
+
+.about-centre__title-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $primary300;
+}
+
+.about-centre__title-event-btn {
+    display: flex;
+    justify-content: end;
+    padding: 40px;
+    width: 100%;
+    border-left: 1px solid $primary300;
+}
+
+.about-centre__info-wrap {
+
+}
+
+.about-centre__empty-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid $primary300;
+    div {
+        width: 100%;
+    }
+}
+
+.about-centre__empty-block > div:first-child {
+    border-right:1px solid $primary300;
+}

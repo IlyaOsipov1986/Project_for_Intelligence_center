@@ -3,10 +3,11 @@ import EventsButton from "../../ui/EventsButton/EventsButton";
 import classNames from "classnames";
 import PropTypes from 'prop-types';
 
-const TitleBlock = ({ title= '', titleBtn='', activeBtn = false, border=false  }) => {
+const TitleBlock = ({ title= '', titleBtn='', activeBtn = false, border=false, width=false  }) => {
      const titleBlockClass = classNames({
         'title-block__container': true,
         'title-block__border': border,
+        'title-block__width': width,
     });
     return (
         <div className={titleBlockClass}>

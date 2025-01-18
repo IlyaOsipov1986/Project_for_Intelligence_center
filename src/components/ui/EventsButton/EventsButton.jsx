@@ -10,7 +10,7 @@ const EventsButton = ({ title='' }) => {
             <ArrowButton
                 size='s'
             />
-            <div className='events-button__add-hover-bg'/>
+            {/* <div className='events-button__add-hover-bg'/> */}
         </div>
     )
 }
