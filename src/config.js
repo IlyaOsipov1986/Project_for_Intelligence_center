@@ -10,6 +10,12 @@ import companylogoTwo from '../src/assets/img/icons/companylogoTwo.svg';
 import companylogoThree from '../src/assets/img/icons/companylogoThree.svg';
 import companylogoFour from '../src/assets/img/icons/companylogoFour.svg';
 import companylogoFive from '../src/assets/img/icons/companylogoFive.svg';
+import aboutCentreLib from '../src/assets/img/icons/aboutCentreLibIcon.svg';
+import aboutCentreLibColor from '../src/assets/img/icons/aboutCentreLibIconColor.svg';
+import aboutCentrePlatform from '../src/assets/img/icons/aboutCentrePlanform.svg';
+import aboutCentrePlatformColor from '../src/assets/img/icons/aboutCentrePlanformColor.svg';
+import aboutCentrePartners from '../src/assets/img/icons/aboutCentrePartnersIcon.svg';
+import aboutCentrePartnersColor from '../src/assets/img/icons/aboutCentrePartnersIconColor.svg';
 
 export const config = {}
 
@@ -93,5 +99,23 @@ export const listCompanyData = [
     },
     {
         logo: companylogoFive
+    }
+]
+
+export const aboutCentreItemsTextIcon = [
+    {
+        icon: aboutCentreLib,
+        iconHover: aboutCentreLibColor,
+        text: 'Фреймворки, библиотеки и алгоритмы промышленного ИИ'
+    },
+    {
+        icon: aboutCentrePlatform,
+        iconHover: aboutCentrePlatformColor,
+        text: 'Платформы для сопровождения и испытания систем на основе ИИ'
+    },
+    {
+        icon: aboutCentrePartners,
+        iconHover: aboutCentrePartnersColor,
+        text: 'Прикладные решения в интересах конкретных индустриальных партнеров'
     }
 ]
