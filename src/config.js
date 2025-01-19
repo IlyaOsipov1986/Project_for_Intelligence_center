@@ -21,6 +21,9 @@ import solutionsImageTwo from "../src/assets/img/solutionsImageTwo.png";
 import solutionsImageThree from "../src/assets/img/solutionsImageThree.png";
 import solutionsImageFour from "../src/assets/img/solutionsImageFour.png";
 import solutionsImageFive from "../src/assets/img/solutionsImageFive.png";
+import blogImageOne from "../src/assets/img/blogImageOne.png";
+import blogImageTwo from "../src/assets/img/blogImageTwo.png";
+import blogImageThree from "../src/assets/img/blogImageThree.png";
 
 export const config = {}
 
@@ -155,5 +158,32 @@ export const applicationSolutionsDataCard = [
         bgImage: solutionsImageFive,
         textCard: 'Программный комплекс для моделирования и автоматического управления процессами нефтепереработки на основе методов ИИ',
         bgColorCard: 'solutions-card-white'
+    }
+]
+
+export const blogCardData = [
+    {
+        id: 0,
+        imgCard: blogImageOne,
+        titleCard: 'Product Mail is taking on Gmail by betting on privacy',
+        textCard: 'Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.',
+        date: '5 декабря 2024',
+        link: 'https://mail.ru/'
+    },
+    {
+        id: 1,
+        imgCard: blogImageTwo,
+        titleCard: 'Product Mail is taking on Gmail by betting on privacy',
+        textCard: 'Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.',
+        date: '10 декабря 2024',
+        link: ''
+    },
+    {
+        id: 2,
+        imgCard: blogImageThree,
+        titleCard: 'Product Mail is taking on Gmail by betting on privacy',
+        textCard: 'Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.',
+        date: '8 декабря 2024',
+        link: ''
     }
 ]

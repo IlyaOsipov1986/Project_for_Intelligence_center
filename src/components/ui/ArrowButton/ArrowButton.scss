@@ -52,7 +52,8 @@
 
 /* Смещение первой стрелки вверх при наведении */
 .square-button:hover .arrow-up {
-    transform: translate(150%, -180%);
+    // transform: translate(150%, -180%);
+    opacity: 0;
 }
 
 /* Появление второй стрелки при наведении */

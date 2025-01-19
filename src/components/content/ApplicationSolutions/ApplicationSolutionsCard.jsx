@@ -1,5 +1,6 @@
 import "../ApplicationSolutions/ApplicationSolutions.scss";
 import classNames from "classnames";
+import PropTypes from 'prop-types';
 
 const ApplicationSolutionsCard = ({item, addClass=''}) => {
 
@@ -17,4 +18,10 @@ const ApplicationSolutionsCard = ({item, addClass=''}) => {
         </div>
     )
 }
+
+ApplicationSolutionsCard.propTypes = {
+    item: PropTypes.object,
+    addClass: PropTypes.string
+}
+
 export default ApplicationSolutionsCard;

@@ -5,6 +5,7 @@ import EmptyCaps from "../../components/content/EmptyCaps/EmptyCaps";
 import Divaider from "../../components/ui/Divaider/Divaider";
 import AboutCentre from "../../components/content/AboutCentre/AboutCentre";
 import ApplicationSolutions from "../../components/content/ApplicationSolutions/ApplicationSolutions";
+import Blog from "../../components/content/Blog/Blog";
 
 const HomePage = () => {
     
@@ -27,6 +28,10 @@ const HomePage = () => {
             <Divaider/>
             <Container>
                 <EmptyCaps/>
+            </Container>
+            <Divaider/>
+            <Container>
+                <Blog/>
             </Container>
         </>
     )

@@ -3,7 +3,7 @@
 
 .application-solutions__container {
     display: grid;
-    grid-template: 109px 242px repeat(2, 140px) 100px repeat(2, 140px) 158px/ 1fr 1fr 1fr;
+    grid-template: 108px 242px repeat(2, 140px) 100px repeat(2, 140px) 158px/ 1fr 1fr 1fr;
     position: relative;
     border-left:1px solid $primary300;
     border-right:1px solid $primary300;
@@ -28,7 +28,7 @@
         grid-column-start: 3;
         grid-column-end: 3;
         grid-row-start: 2;
-        grid-row-end: 4;
+        grid-row-end: 5;
     }
 
     .application-solutions-card:nth-child(4) { 
@@ -50,6 +50,9 @@
         grid-column-end: 3;
         grid-row-start: 5;
         grid-row-end: 6;
+        @media (max-width: 1362px) {
+            grid-row-end: 9;
+        }
 
         .application-solutions-card__text {
             height: 158px;
@@ -86,7 +89,8 @@
     display: flex;
     flex-direction: column;
     img {
-        object-fit: cover;
+       width: 382px;
+       height: 381px;
     }
 }
 

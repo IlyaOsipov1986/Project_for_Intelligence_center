@@ -1,0 +1,83 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.blog__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}
+
+.blog__title-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $primary300;
+}
+
+.blog__title-event-btn {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    border-left: 1px solid $primary300;
+    padding: 0 0 0 80px;
+}
+
+.blog__cards-block {
+    display: flex;
+    flex-direction: row;
+    .blog__card {
+        border-right: 1px solid $primary300;
+    }
+    .blog__card:last-child {
+        border-right: none;
+    }
+}
+
+.blog__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 19px 21px;
+}
+
+.blog__card-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $primary300;
+    h6 {
+        @include h6;
+    }
+    p {
+        @include font-open-sans;
+        @include text-middle-gray;
+        @include base-16;
+    }
+}
+
+.blog__card-date-link {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+        @include text-middle-gray;
+        @include base-14;  
+    }
+    a { 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        @include font-open-sans;
+        @include text-red;
+        @include base-16;
+    }
+}

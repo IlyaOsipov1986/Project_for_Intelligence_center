@@ -1,0 +1,15 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.row-left-right-buttons__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 23px; 
+    gap: 52px;
+    border: 1px solid $primary300;
+    img {
+        width: 32px;
+        cursor: pointer;
+    }
+}
