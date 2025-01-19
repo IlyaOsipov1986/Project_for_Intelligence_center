@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 167px;
-    border-bottom: 1px solid $primary300;
     border-right: 1px solid $primary300;
     border-left: 1px solid $primary300;
 }
@@ -37,7 +36,7 @@
     width: 100%;
     border-right: 1px solid $primary300;
     & div:first-child {
-        background-color: $secondary300;
+        background-image: $linear-gradient-red;
         color: $white;
         @include base-20;
         @include medium;

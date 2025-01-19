@@ -16,6 +16,11 @@ import aboutCentrePlatform from '../src/assets/img/icons/aboutCentrePlanform.svg
 import aboutCentrePlatformColor from '../src/assets/img/icons/aboutCentrePlanformColor.svg';
 import aboutCentrePartners from '../src/assets/img/icons/aboutCentrePartnersIcon.svg';
 import aboutCentrePartnersColor from '../src/assets/img/icons/aboutCentrePartnersIconColor.svg';
+import solutionsImageOne from "../src/assets/img/solutionsImageOne.png";
+import solutionsImageTwo from "../src/assets/img/solutionsImageTwo.png";
+import solutionsImageThree from "../src/assets/img/solutionsImageThree.png";
+import solutionsImageFour from "../src/assets/img/solutionsImageFour.png";
+import solutionsImageFive from "../src/assets/img/solutionsImageFive.png";
 
 export const config = {}
 
@@ -118,4 +123,38 @@ export const aboutCentreItemsTextIcon = [
         iconHover: aboutCentrePartnersColor,
         text: 'Прикладные решения в интересах конкретных индустриальных партнеров'
     }
+]
+
+export const applicationSolutionsDataCard = [
+    {
+        id: 0,
+        bgImage: solutionsImageOne,
+        textCard: 'Комплекс полуавтоматического сброса GPS маячка на ледник для мониторинга их передвижения',
+        bgColorCard: 'solutions-card-white'
+    },
+    {
+        id: 1,
+        bgImage: solutionsImageTwo, 
+        textCard: 'Программный комплекс для моделирования ВАХ двигателей  DC буровых установок для скважин с использованием методов ИИ',
+        bgColorCard: 'solutions-card-black'
+    },
+    {
+        id: 2,
+        bgImage: solutionsImageThree,
+        textCard: 'Программный комплекс методов искусственного интеллекта для интернета вещей с малым количеством обучающих данных',
+        bgColorCard: 'solutions-card-black'
+    },
+    {
+        id: 3,
+        bgImage: solutionsImageFour,
+        textCard: 'БПЛА Комплекс для уменьшения времени поиска человека в лесу',
+        bgColorCard: 'solutions-card-red'
+    },
+    {
+        id: 4,
+        bgImage: solutionsImageFive,
+        textCard: 'Программный комплекс для моделирования и автоматического управления процессами нефтепереработки на основе методов ИИ',
+        bgColorCard: 'solutions-card-white'
+    },
+
 ]

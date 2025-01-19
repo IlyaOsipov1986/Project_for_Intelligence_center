@@ -1,0 +1,69 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.application-solutions__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left:1px solid $primary300;
+    border-right:1px solid $primary300;
+}
+
+.application-solutions-title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 53px;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 40px;
+    word-break: normal;
+    position: relative;
+}
+
+.application-solutions-title-block__text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    h2 {
+        @include h2;
+        color: $white;
+    }
+    p {
+        @include font-open-sans;
+        @include body-default;
+        @include text-middle-gray;
+    }
+}
+
+.application-solutions-card {
+    display: flex;
+    flex-direction: column;
+    img {
+        object-fit: cover;
+    }
+}
+
+.application-solutions-card__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    border-bottom: 1px solid #CEDBE7;
+    @include font-open-sans;
+    @include medium;
+}
+
+.solutions-card-black {
+    background-image: $linear-gradient-black;
+    color: $white;
+}
+
+.solutions-card-red {
+    background-image: $linear-gradient-red;
+    color: $white;
+}
+
+.solutions-card-white {
+    background-color: $white;
+}
