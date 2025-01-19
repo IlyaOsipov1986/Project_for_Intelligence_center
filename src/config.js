@@ -155,6 +155,5 @@ export const applicationSolutionsDataCard = [
         bgImage: solutionsImageFive,
         textCard: 'Программный комплекс для моделирования и автоматического управления процессами нефтепереработки на основе методов ИИ',
         bgColorCard: 'solutions-card-white'
-    },
-
+    }
 ]
