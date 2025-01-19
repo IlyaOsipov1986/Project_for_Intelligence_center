@@ -1,0 +1,70 @@
+@import "../../../assets/styles/vars.scss";
+
+.contacts__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    border-left: 1px solid $primary300;
+    border-right: 1px solid $primary300;
+    grid-template-rows: 243px 1fr;
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item4 item4";
+}   
+
+.contacts__grid-item1 {
+    grid-area: item1;
+    border-right: 1px solid $primary300;
+    border-bottom: 1px solid $primary300;
+}
+
+.contacts__grid-item2 {
+    grid-area: item2;
+    border-right: 1px solid $primary300;
+    border-bottom: 1px solid $primary300;
+}
+
+.contacts__grid-item3 {
+    grid-area: item3;
+    border-bottom: 1px solid $primary300;
+}
+
+.contacts__grid-row-bottom {
+    grid-area: item4;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+}
+
+.contacts__grid-row-bottom__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+}
+
+.contacts__grid-row-bottom__item:first-child {
+    border-right: 1px solid $primary300;
+}
+
+.contacts__grid-row-bottom__item:last-child {
+    justify-content: end;
+}
+
+.contacts__grid-image-item {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 3;
+    img {
+        width: 400px;
+        max-width: 100%; 
+        height: auto;
+    }
+}

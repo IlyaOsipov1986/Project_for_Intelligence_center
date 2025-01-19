@@ -1,0 +1,102 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.about-centre__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 167px;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}
+
+.about-centre__title-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $primary300;
+}
+
+.about-centre__title-event-btn {
+    display: flex;
+    justify-content: end;
+    padding: 40px;
+    width: 100%;
+    border-left: 1px solid $primary300;
+}
+
+.about-centre__information-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-centre__information-first {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    border-right: 1px solid $primary300;
+    & div:first-child {
+        background-image: $linear-gradient-red;
+        color: $white;
+        @include base-20;
+        @include medium;
+    }
+    & div:last-child {
+        @include body-default;
+        color: $default;
+        border-bottom: none;
+    }
+}
+
+.about-centre__information-first__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    border-bottom: 1px solid $primary300;
+    @include font-open-sans;
+}
+
+.about-centre__information-second {
+    display: grid;
+    width: 100%;
+    & div:last-child {
+        border-bottom: none;
+    }
+}
+
+.about-centre__information-second__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px;
+    width: 100%;
+    border-bottom: 1px solid $primary300;
+    cursor: pointer;
+    gap: 40px;
+    @include font-open-sans;
+    @include body-default;
+    color: $default;
+}
+
+.about-centre__information-second__img {
+    display: flex;
+    width: 54px;
+    height: 62px;
+}
+
+.about-centre__empty-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid $primary300;
+    
+    div {
+        width: 100%;
+    }
+}
+
+.about-centre__empty-block > div:first-child {
+    border-right:1px solid $primary300;
+}

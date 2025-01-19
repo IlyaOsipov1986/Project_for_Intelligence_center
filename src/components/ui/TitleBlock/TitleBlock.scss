@@ -1,0 +1,22 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/vars.scss";
+
+.title-block__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 40px;
+    h2 {
+        @include h2;
+    }
+}
+
+.title-block__border {
+    border: 1px solid $primary300;
+}
+
+.title-block__width {
+    width: 100%;
+}

@@ -1,0 +1,120 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.application-solutions__container {
+    display: grid;
+    grid-template: 108px 242px repeat(2, 140px) 100px repeat(2, 140px) 158px/ 1fr 1fr 1fr;
+    position: relative;
+    border-left:1px solid $primary300;
+    border-right:1px solid $primary300;
+
+    div:nth-child(1) { 
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .application-solutions-card:nth-child(2) { 
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        position: absolute;
+        top: -31px;
+    }
+
+    .application-solutions-card:nth-child(3) { 
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .application-solutions-card:nth-child(4) { 
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 7;
+    } 
+
+    .application-solutions-card:nth-child(5) { 
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
+
+    .application-solutions-card:nth-child(6) { 
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        @media (max-width: 1362px) {
+            grid-row-end: 9;
+        }
+
+        .application-solutions-card__text {
+            height: 158px;
+        }
+    }
+}
+
+.application-solutions-title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px;
+    word-break: normal;
+    position: relative;
+}
+
+.application-solutions-title-block__text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    h2 {
+        @include h2;
+        color: $white;
+    }
+    p {
+        @include font-open-sans;
+        @include body-default;
+        @include text-middle-gray;
+    }
+}
+
+.application-solutions-card {
+    display: flex;
+    flex-direction: column;
+    img {
+       width: 382px;
+       height: 381px;
+    }
+}
+
+.application-solutions-card__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    width: 100%;
+    height: 141px;
+    @include font-open-sans;
+    @include medium;
+}
+
+.solutions-card-black {
+    background-image: $linear-gradient-black;
+    color: $white;
+}
+
+.solutions-card-red {
+    background-image: $linear-gradient-red;
+    color: $white;
+}
+
+.solutions-card-white {
+    background-color: $white;
+}

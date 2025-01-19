@@ -1,0 +1,33 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/vars.scss";
+
+.title-tabs__container {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}
+
+.title-tabs__item {
+    padding: 20px 6px; 
+    width: 192px;
+    text-align: center;
+    background-color: $white; 
+    border-right: 1px solid $primary300;
+    cursor: pointer;
+    @include font-open-sans;
+    @include base-14;
+    @include medium;
+
+    &:hover {
+        color: $secondary600;
+    }
+    &:active {
+        color: $secondary600;
+    }
+}
+
+.title-tabs__item:last-child {
+    border-right: none;
+}

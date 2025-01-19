@@ -1,0 +1,14 @@
+.social-networks-block__container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    bottom: -25px;
+}
+
+.social-networks-block__icon {
+    width: 50px;
+    cursor: pointer;
+}
+

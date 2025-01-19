@@ -1,0 +1,73 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.footer-container {
+    margin: 0 auto;
+    padding: 0 82px;
+    box-sizing: border-box;
+    max-width: 1756px;
+    width: 100%;
+}
+
+.footer-top {
+  border: 1px solid $primary300;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 282px;
+
+  @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+}
+
+.footer-nav-item {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px 40px 40px;
+  border-right: 1px solid $primary300;
+    img {
+      width: 50px;
+      margin-bottom: 16px;
+    }
+    p {
+      @include base-16;
+      @include regular;
+      @include font-open-sans;
+    }
+    span {
+      @include h7;
+      margin-bottom: 14px;
+    }
+    a {
+      @include text-red-ligth;
+    }
+}
+
+.footer-nav-item:first-child {
+  border-left: 1px solid $primary300;
+}
+
+.footer__bottom {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid $primary300;
+  border-right: 1px solid $primary300;
+  
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.footer__sign {
+    @include base-12;
+    @include text-black;
+}

@@ -1,0 +1,76 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/vars.scss";
+
+.calendar-events__container {
+    display: grid;
+    grid-template-rows: auto 163px;
+    border-top:1px solid $primary300;
+}
+
+.calendar-events__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 50px 0 0 40px;
+}
+
+.calendar-events__empty-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid $primary300;
+    div {
+        width: 100%;
+    }
+}
+
+.calendar-events__empty-block > div:first-child {
+    border-right:1px solid $primary300;
+}
+
+.calendar-events-row__container {
+    display: grid;
+    grid-template-columns: 128px 640px auto;
+    grid-template-rows: auto;
+    padding: 30px 40px 32px 0;
+    border-left:1px solid $primary300;
+    border-top:1px solid $primary300;
+    cursor: pointer;
+}
+
+.calendar-events-row__container:first-child {
+    padding: 0 40px 32px 0;
+    border-top:none;
+}
+
+.calendar-events-row__date {
+    padding-left: 24px;
+    position: relative;
+    line-height: 23px;
+    @include text-red;
+    @include bold;
+    @include base-23;
+}
+
+.calendar-events-row__date-icon {
+    position: absolute;
+    width: 16px;
+    left: -8px;
+} 
+.calendar-events-row__title {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    h6 {
+        @include h6;
+    }
+    p {
+        @include text-word-wrap;
+        @include body-default;
+        @include text-middle-gray;
+    }
+}
+.calendar-events-row__arrow-btn {
+    display: flex;
+    justify-content: end;
+}

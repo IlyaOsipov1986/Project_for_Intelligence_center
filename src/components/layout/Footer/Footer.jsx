@@ -1,7 +1,12 @@
+import '../Footer/Footer.scss';
+import FooterBottom from './FooterBottom';
+import FooterTop from './FooterTop';
+
 const Footer = () => {
     return (
-        <div>
-            Footer
+        <div className='footer-container'>
+           <FooterTop/>
+           <FooterBottom/>
         </div>
     )
 }

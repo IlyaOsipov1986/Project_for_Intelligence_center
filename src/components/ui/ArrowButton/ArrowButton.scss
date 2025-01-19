@@ -1,0 +1,63 @@
+@import "../../../assets/styles/vars.scss";
+
+.arrow-button_size_s {
+    width: 48px;
+    height: 48px;
+}
+
+.arrow-button_size_m {
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стиль для самой кнопки */
+.square-button {
+    z-index: 10;
+    position: relative;
+    background-color: $secondary600;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Стрелка внутри кнопки */
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 19px;
+    height: 19px;
+    background-image: url("../../../assets/img/icons/arrowWhite.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Положение первой стрелки до наведения */
+.arrow-up {
+    opacity: 1;
+}
+
+/* Положение второй стрелки до наведения */
+.arrow-down {
+    opacity: 0;
+    transform: translate(-150%, 50%);
+}
+
+/* Смещение первой стрелки вверх при наведении */
+.square-button:hover .arrow-up {
+    // transform: translate(150%, -180%);
+    opacity: 0;
+}
+
+/* Появление второй стрелки при наведении */
+.square-button:hover .arrow-down {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
