@@ -24,6 +24,10 @@ import solutionsImageFive from "../src/assets/img/solutionsImageFive.png";
 import blogImageOne from "../src/assets/img/blogImageOne.png";
 import blogImageTwo from "../src/assets/img/blogImageTwo.png";
 import blogImageThree from "../src/assets/img/blogImageThree.png";
+import teamImageOne from "../src/assets/img/teamImageOne.png";
+import teamColorImageOne from "../src/assets/img/teamColorImageOne.png"; 
+import teamImageTwo from "../src/assets/img/teamImageTwo.png";
+import teamColorImageTwo from "../src/assets/img/teamColorImageTwo.png";
 
 export const config = {}
 
@@ -185,5 +189,36 @@ export const blogCardData = [
         textCard: 'Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.',
         date: '8 декабря 2024',
         link: ''
+    }
+]
+
+export const teamPersonCardsData = [
+    {
+        id: 0,
+        name: 'Амелин Константин Сергеевич',
+        position: 'И.о. директора Центра ИИ',
+        imgPerson: teamImageOne,
+        imgPersonHover: teamColorImageOne 
+    },
+    {
+        id: 1,
+        name: 'Архипов Владислав Владимирович',
+        position: 'Руководитель юридического направления',
+        imgPerson: teamImageTwo,
+        imgPersonHover: teamColorImageTwo
+    },
+    {
+        id: 2,
+        name: '',
+        position: '',
+        imgPerson: null,
+        imgPersonHover: null
+    },
+    {
+        id: 3,
+        name: '',
+        position: '',
+        imgPerson: null,
+        imgPersonHover: null
     }
 ]

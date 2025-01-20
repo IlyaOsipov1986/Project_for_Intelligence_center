@@ -6,6 +6,7 @@ import Divaider from "../../components/ui/Divaider/Divaider";
 import AboutCentre from "../../components/content/AboutCentre/AboutCentre";
 import ApplicationSolutions from "../../components/content/ApplicationSolutions/ApplicationSolutions";
 import Blog from "../../components/content/Blog/Blog";
+import Team from "../../components/content/Team/Team";
 
 const HomePage = () => {
     
@@ -25,6 +26,8 @@ const HomePage = () => {
             <Container>
                 <CompanyLogos/>
             </Container>
+            <Divaider/>
+                <Team/>
             <Divaider/>
             <Container>
                 <EmptyCaps/>

@@ -1,0 +1,36 @@
+@import "../../../assets/styles/vars.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.team__empty-block {
+    display: grid;
+    grid-template-columns: 288px 288px 1fr;
+    grid-template-rows: 200px;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+
+    .team__empty-block-item:nth-child(1) {
+        border-right: 1px solid $primary300;
+        position: relative;
+        .title-block__container {
+            position: absolute;
+            bottom: -70px;
+        } 
+    }
+
+    .team__empty-block-item:nth-child(2) {
+        border-right: 1px solid $primary300; 
+    }
+}
+
+.team__row-btns {
+    display: flex;
+    align-items: flex-start;    
+    justify-content: end;
+    height: 200px;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}
+
+.team-person-card {
+
+}
