@@ -18,7 +18,7 @@ const Slider = () => {
             </div>
             <div className="slider-headline__wrap">
                 <div className="slider-headline__image">
-                    <img src={isHovered ? sliderImageOne : sliderImageTwo} style={{
+                    <img src={isHovered ? sliderImageTwo : sliderImageOne} style={{
                             // backgroundImage: `url(${isHovered ? sliderImageOne : sliderImageTwo})`,
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',

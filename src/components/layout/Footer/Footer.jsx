@@ -7,6 +7,9 @@ import FooterCard from '../Footer/FooterCard';
 const Footer = () => {
     return (
         <div className='footer-container'>
+            <div className='footer-nav-item-empty'>
+                <span className='bordered-element'/>
+            </div>
             {footerData.map((el) => {
             return (
                 <React.Fragment key={el.id}>
@@ -16,6 +19,9 @@ const Footer = () => {
                 </React.Fragment>
                 )
             })}
+            <div className='footer-nav-item-empty'>
+                
+            </div>
            <FooterBottom/>
         </div>
     )

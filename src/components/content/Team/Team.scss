@@ -47,6 +47,11 @@
     padding: 100px 40px;
     position: relative;
     border-right: 1px solid $primary300;
+
+    @media(max-width: $laptop) {
+        padding: 80px 40px 60px 40px;
+    }
+    
     
     img {
         width: 150px;
