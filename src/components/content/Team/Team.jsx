@@ -1,8 +1,11 @@
 import "../Team/Team.scss";
+import React from "react";
 import Container from "../../layout/Container/Container";
 import Divaider from "../../ui/Divaider/Divaider";
 import TitleBlock from "../../ui/TitleBlock/TitleBlock";
+import TeamPersonCard from "../Team/TeamPersonCard";
 import RowLeftRightButtons from "../../ui/RowLeftRightButtons/RowLeftRightButtons";
+import { teamPersonCardsData } from "../../../config";
 
 const Team = () => {
 
@@ -31,7 +34,15 @@ const Team = () => {
             <Divaider/>
             <Container>
                 <div className="team__card-wrap">
-                    
+                    {teamPersonCardsData.map((el) => {
+                        return (
+                            <React.Fragment key={el.id}>
+                                <TeamPersonCard
+                                    item={el}
+                                />
+                            </React.Fragment>
+                        )
+                    })}
                 </div>
             </Container>
         </>

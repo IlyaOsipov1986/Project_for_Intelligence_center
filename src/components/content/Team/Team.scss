@@ -31,6 +31,41 @@
     border-left: 1px solid $primary300;
 }
 
-.team-person-card {
+.team__card-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: 1px solid $primary300;
+    border-left: 1px solid $primary300;
+}
 
+.team-person-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    padding: 100px 40px;
+    position: relative;
+    border-right: 1px solid $primary300;
+    
+    img {
+        width: 150px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 0;
+        right: 0;
+
+        @media(max-width: $laptop) {
+            width: 120px;
+        }
+    }
+
+    h6 {
+        @include h6;
+    }
+
+    p {
+        @include font-open-sans;
+        @include text-middle-gray;
+    }
 }
