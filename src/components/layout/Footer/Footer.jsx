@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className='footer-container'>
             <div className='footer-nav-item-empty'>
-                <span className='bordered-element'/>
+                <div className='bordered-element-left'/>
             </div>
             {footerData.map((el) => {
             return (
@@ -20,7 +20,7 @@ const Footer = () => {
                 )
             })}
             <div className='footer-nav-item-empty'>
-                
+                <div className='bordered-element-right'/>
             </div>
            <FooterBottom/>
         </div>
