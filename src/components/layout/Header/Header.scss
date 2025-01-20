@@ -16,7 +16,12 @@
   padding: 0 82px;
   box-sizing: border-box;
   height: 86px;
-  max-width: 1756px;
+  max-width: 100%;
+  width: 1756px;
+
+  @media(max-width: $laptop) {
+        padding: 0 15px;
+    }
 }
 
 .topbar {
