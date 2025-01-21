@@ -11,7 +11,6 @@ const ErrorBoundary = () => {
           display: "flex",
           alignItems: "center",
           minHeight: "100vh",
-          background: "#CEDBE7",
           color: "black",
         }}
       >

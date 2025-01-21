@@ -12,7 +12,7 @@ import Slider from "../../components/ui/Slider/Slider";
 const HomePage = () => {
     
     return (
-        <>  
+        <main className="main">  
             <Slider/>
             <Container>
                 <CenterCalendar/>
@@ -38,7 +38,7 @@ const HomePage = () => {
             <Container>
                 <Blog/>
             </Container>
-        </>
+        </main>
     )
 }
 export default HomePage;
