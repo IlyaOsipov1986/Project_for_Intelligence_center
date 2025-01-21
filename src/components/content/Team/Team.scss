@@ -29,6 +29,10 @@
     height: 200px;
     border-right: 1px solid $primary300;
     border-left: 1px solid $primary300;
+    .row-left-right-buttons__container {
+        border-top: none;
+        border-right: none;
+    }
 }
 
 .team__card-wrap {

@@ -26,10 +26,10 @@
 }
 
 .blog__cards-block {
-    display: flex;
-    flex-direction: row;
-    .blog__card {
-        border-right: 1px solid $primary300;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .blog__card:last-child > .blog__card-content {
+        border-right: none
     }
     .blog__card:last-child {
         border-right: none;
@@ -45,6 +45,8 @@
     display: flex;
     flex-direction: column;
     padding: 19px 21px;
+    border-right: 1px solid $primary300;
+    height: 100%;
 }
 
 .blog__card-title {

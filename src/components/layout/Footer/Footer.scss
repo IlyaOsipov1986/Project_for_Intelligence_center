@@ -10,6 +10,10 @@
   width: 1756px;
   border: 1px solid $primary300;
  
+  @media(max-width: 1440px) {
+    width: 1320px;
+  }
+
   @media(max-width: $laptop) {
     grid-template: 280px 63px / auto repeat(3, 331px) auto;
   }

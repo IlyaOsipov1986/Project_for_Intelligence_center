@@ -99,5 +99,6 @@ img {
 
 .divaider {
   width: 100%;
-  border: 1px solid $primary300;
+  height: 1px;
+  background-color: $primary300;
 }
