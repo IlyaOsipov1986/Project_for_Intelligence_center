@@ -1,3 +1,5 @@
+@import "../../../assets/styles/vars.scss";
+
 .slider-headline {
     display: flex;
     flex-direction: row;
@@ -42,10 +44,26 @@
     z-index: 6;
     width: 100%;
     margin: 0 auto;
-    padding: 0 183px;
+    padding: 10% 10% 5% 10%;
+    height: 100%;
 }
+
+.slider-block__logo {
+    width: 580px;
+
+    @media(max-width: $middle-screen-size) {
+        width: 480px;
+    }
+    
+}
+
 .slider-square {
     max-width: 578px;
     width: 100%;
-    height: 711px;
+    height: 100%;
+
+    @media(max-width: $middle-screen-size) {
+        max-width: 480px;
+    }
+    
 }

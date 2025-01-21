@@ -6,7 +6,7 @@ import FooterCard from '../Footer/FooterCard';
 
 const Footer = () => {
     return (
-        <div className='footer-container'>
+        <footer className='footer-container'>
             <div className='footer-nav-item-empty'>
                 <div className='bordered-element-left'/>
             </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className='bordered-element-right'/>
             </div>
            <FooterBottom/>
-        </div>
+        </footer>
     )
 }
 export default Footer;

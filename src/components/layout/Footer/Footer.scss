@@ -10,7 +10,7 @@
   width: 1756px;
   border: 1px solid $primary300;
  
-  @media(max-width: 1440px) {
+  @media(max-width: $middle-screen-size) {
     width: 1320px;
   }
 
