@@ -4,8 +4,7 @@
 .site-in-development__container {
     margin: 0 auto;
     display: grid;
-    grid-template: 220px 860px 220px/36.1% 19.4% 34% 12%;
-    // grid-template: 220px 860px 220px/ 685px 371px 641px 223px;
+    grid-template: 220px 640px 220px/36.1% 19.4% 34% 12%;
     max-width: 1920px;
     width: 100%;
     overflow-x: hidden;
@@ -71,7 +70,7 @@
 
     .item-title {
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 12%;
         color: $default;
         z-index: 5;
@@ -104,9 +103,11 @@
 .site-in-development__item-7 {
     display: flex;
     grid-column-start: 3;
-    grid-column-end: 3;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-image: url('../../assets//img/siteInDevelopmentImageOne.png');
+    background-size: cover;
 }
 
 .site-in-development__item-8 {
