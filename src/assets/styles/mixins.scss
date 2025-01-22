@@ -77,6 +77,14 @@
   font-size: 11px;
 }
 
+@mixin base-135 {
+  font-size: 135px;
+}
+
+@mixin base-40 {
+  font-size: 40px;
+}
+
 @mixin base-23 {
   font-size: 23px;
 }
@@ -158,4 +166,7 @@
   word-break: break-word;
 }
 
+@mixin base-line-height-100 {
+  line-height: 100%;
+}
   

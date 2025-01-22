@@ -1,7 +1,7 @@
 import Container from "../Container/Container";
 import Divaider from "../../ui/Divaider/Divaider";
 import '../Contacts/Contacts.scss';
-import ArrowButton from "../../ui/ArrowButton/ArrowButton";
+import ArrowRedButton from "../../ui/ArrowRedButton/ArrowRedButton";
 import contactsLogoIICentre from "../../../assets/img/icons/contactsLogoIICentre.svg";
 
 const Contacts = () => {
@@ -15,11 +15,11 @@ const Contacts = () => {
                     <div className="contacts__grid-item3"></div>
                     <div className="contacts__grid-row-bottom">
                         <div className="contacts__grid-row-bottom__item">
-                            <ArrowButton size="m"/>
+                            <ArrowRedButton size="m"/>
                             <h2>Telegram</h2>
                         </div>
                         <div className="contacts__grid-row-bottom__item">
-                            <ArrowButton size="m"/>
+                            <ArrowRedButton size="m"/>
                             <h2>Vkontakte</h2>
                         </div>
                     </div>

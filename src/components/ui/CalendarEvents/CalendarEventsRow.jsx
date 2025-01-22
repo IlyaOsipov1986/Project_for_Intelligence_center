@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ArrowButton from "../ArrowButton/ArrowButton";
+import ArrowRedButton from "../ArrowRedButton/ArrowRedButton";
 import "../CalendarEvents/CalendarEvents.scss";
 import PropTypes from 'prop-types';
 import redSqureFill from "../../../assets/img/icons/redSqureFill.svg";
@@ -26,7 +26,7 @@ const CalendarEventsRow = ({item}) => {
                     <p>Спикер: {item.speaker}</p>
                 </div>
                 <div className="calendar-events-row__arrow-btn">
-                    {isHovered === item.id && <ArrowButton
+                    {isHovered === item.id && <ArrowRedButton
                         size="m"
                     />}
                 </div>

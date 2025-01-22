@@ -73,6 +73,14 @@
   
 }
 
+.base-135 {
+  font-size: 135px;
+}
+
+.base-40 {
+  font-size: 40px;
+}
+
 .base-23 {
   font-size: 23px;
 }
@@ -152,4 +160,8 @@
 .text-word-wrap {
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+.base-line-height-100 {
+  line-height: 100%;
 }
