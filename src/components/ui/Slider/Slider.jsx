@@ -16,7 +16,10 @@ const Slider = () => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 />
-                <div className="slider-block__logo"/>
+                <div className="slider-block__logo">
+                    <div className="slider-block__logo-item-up"/>
+                    <div className="slider-block__logo-item-down"/>
+                </div>
             </div>
             <div className="slider-headline__wrap">
                 <div className="slider-headline__image">
