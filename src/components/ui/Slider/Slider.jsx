@@ -12,15 +12,16 @@ const Slider = () => {
     return (
         <div className="slider-headline">
             <div className="slider-block">
-                    <img className="slider-block__logo" src={sliderIconOne} alt="иконка" />
-                    <div onMouseEnter={() => setIsHovered(true)}
+                <img className="slider-block__logo-up" src={sliderIconOne} alt="иконка" />
+                {/* <img className="slider-block__logo-down" src={sliderIconTwo} alt="иконка" /> */}
+                <div className="slider-square"
+                        onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
-                        className="slider-square"/>
+                />
             </div>
             <div className="slider-headline__wrap">
                 <div className="slider-headline__image">
                     <img src={isHovered ? sliderImageTwo : sliderImageOne} style={{
-                            // backgroundImage: `url(${isHovered ? sliderImageOne : sliderImageTwo})`,
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
                             backgroundPosition: 'bottom',

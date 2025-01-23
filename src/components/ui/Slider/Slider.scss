@@ -44,17 +44,33 @@
     z-index: 6;
     width: 100%;
     margin: 0 auto;
-    padding: 10% 10% 5% 10%;
+    padding: 10% 5% 5% 10%;
     height: 100%;
 }
 
-.slider-block__logo {
+.slider-block__logo-wrap {
+
+}
+
+.slider-block__logo-up {
+    opacity: 1;
     width: 580px;
+    height: 95px;
 
     @media(max-width: $middle-screen-size) {
         width: 480px;
     }
-    
+}
+
+.slider-block__logo-down {
+    opacity: 0;
+    transform: translate(-150%, 50%);
+    width: 580px;
+    height: 95px;
+
+    @media(max-width: $middle-screen-size) {
+        width: 480px;
+    }
 }
 
 .slider-square {

@@ -14,6 +14,41 @@
   width: 193px;
   max-width: 100%;
   justify-content: space-between;
+
+  &:hover {
+
+    .events-button__title {
+      color: $white;
+    }
+
+    .events-button {
+      color: $white;
+    }
+
+    .square-button .arrow-up {
+      opacity: 0;
+    }
+  
+  .square-button .arrow-down {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.events-button::before {
+  content:'';
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 49px;
+	height: 49px;
+	background-color: $secondary600;
+	transition: all 0.8s ease;
+}
+
+.events-button:hover::before {
+  width: 100%;
 }
 
 .events-button__title {
@@ -23,6 +58,7 @@
   @include medium;
   @include base-14;
   @include text-red;
+  z-index: 4;
 }
 
 // .events-button__add-hover-bg {
