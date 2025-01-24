@@ -1,8 +1,8 @@
 import classNames from "classnames";
-import "../../ui/ArrowButton/ArrowButton.scss";
+import "../../ui/ArrowRedButton/ArrowRedButton.scss";
 import PropTypes from 'prop-types';
 
-const ArrowButton = ({
+const ArrowRedButton = ({
     size=''// s - 48, m - 50
 }) => {
     
@@ -21,8 +21,8 @@ const ArrowButton = ({
     )
 }
 
-ArrowButton.propTypes = {
+ArrowRedButton.propTypes = {
     size: PropTypes.string,
 }
 
-export default ArrowButton;
+export default ArrowRedButton;

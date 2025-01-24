@@ -2,6 +2,7 @@ import "../Slider/Slider.scss";
 import sliderImageOne from "../../../assets/img/sliderImageOne.png";
 import sliderImageTwo from "../../../assets/img/sliderImageTwo.png";
 import sliderIconOne from "../../../assets/img/icons/sliderIconOne.svg";
+import sliderIconTwo from "../../../assets/img/icons/sliderIconTwo.svg";
 import { useState } from "react";
 
 const Slider = () => {
@@ -11,15 +12,18 @@ const Slider = () => {
     return (
         <div className="slider-headline">
             <div className="slider-block">
-                    <img src={sliderIconOne} alt="иконка" />
-                    <div onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                        className="slider-square"/>
+                <div className="slider-square"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                />
+                <div className="slider-block__logo">
+                    <div className="slider-block__logo-item-up"/>
+                    <div className="slider-block__logo-item-down"/>
+                </div>
             </div>
             <div className="slider-headline__wrap">
                 <div className="slider-headline__image">
-                    <img src={isHovered ? sliderImageOne : sliderImageTwo} style={{
-                            // backgroundImage: `url(${isHovered ? sliderImageOne : sliderImageTwo})`,
+                    <img src={isHovered ? sliderImageTwo : sliderImageOne} style={{
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
                             backgroundPosition: 'bottom',

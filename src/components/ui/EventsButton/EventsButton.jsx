@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ArrowButton from "../ArrowButton/ArrowButton";
+import ArrowRedButton from "../ArrowRedButton/ArrowRedButton";
 import "../../ui/EventsButton/EventsButton.scss";
 
 const EventsButton = ({ title='' }) => {
@@ -7,10 +7,9 @@ const EventsButton = ({ title='' }) => {
     return (
         <div className='events-button'>
             <div className='events-button__title'>{title}</div>
-            <ArrowButton
+            <ArrowRedButton
                 size='s'
             />
-            {/* <div className='events-button__add-hover-bg'/> */}
         </div>
     )
 }

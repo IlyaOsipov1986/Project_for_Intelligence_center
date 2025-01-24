@@ -2,19 +2,15 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "../layout/Footer/Footer";
 import Contacts from "./Contacts/Contacts";
-import Slider from "../ui/Slider/Slider";
 
 const Layout = () => {
     return (
         <div className="App">
-            <Header />
-            <Slider/>
-            <main className="main">
-              <Outlet />
-            </main>
+          <Header />
+            <Outlet />
             <Contacts/>
-            <Footer />
-      </div>
-    )
-}
+          <Footer />
+        </div>
+    )}
+
 export default Layout;

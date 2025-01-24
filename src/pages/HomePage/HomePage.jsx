@@ -6,11 +6,14 @@ import Divaider from "../../components/ui/Divaider/Divaider";
 import AboutCentre from "../../components/content/AboutCentre/AboutCentre";
 import ApplicationSolutions from "../../components/content/ApplicationSolutions/ApplicationSolutions";
 import Blog from "../../components/content/Blog/Blog";
+import Team from "../../components/content/Team/Team";
+import Slider from "../../components/ui/Slider/Slider";
 
 const HomePage = () => {
     
     return (
-        <>
+        <main className="main">  
+            <Slider/>
             <Container>
                 <CenterCalendar/>
             </Container>
@@ -26,6 +29,8 @@ const HomePage = () => {
                 <CompanyLogos/>
             </Container>
             <Divaider/>
+                <Team/>
+            <Divaider/>
             <Container>
                 <EmptyCaps/>
             </Container>
@@ -33,7 +38,7 @@ const HomePage = () => {
             <Container>
                 <Blog/>
             </Container>
-        </>
+        </main>
     )
 }
 export default HomePage;

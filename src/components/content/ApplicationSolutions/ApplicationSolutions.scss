@@ -49,15 +49,30 @@
         grid-column-start: 3;
         grid-column-end: 3;
         grid-row-start: 5;
-        grid-row-end: 6;
-        @media (max-width: 1362px) {
-            grid-row-end: 9;
-        }
+        grid-row-end: 9;
 
         .application-solutions-card__text {
             height: 158px;
         }
     }
+}
+
+.application-solutions__empty-item-1 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    border-right: 1px solid $primary300;
+}
+
+.application-solutions__empty-item-2 {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    border-right: 1px solid $primary300;
 }
 
 .application-solutions-title-block {

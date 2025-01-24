@@ -77,6 +77,14 @@
   font-size: 11px;
 }
 
+@mixin base-135 {
+  font-size: 135px;
+}
+
+@mixin base-40 {
+  font-size: 40px;
+}
+
 @mixin base-23 {
   font-size: 23px;
 }
@@ -121,6 +129,10 @@
   font-weight: 400;
 }
 
+@mixin regular-500 {
+  font-weight: 500;
+}
+
 @mixin medium {
   font-weight: 600;
 }
@@ -158,4 +170,7 @@
   word-break: break-word;
 }
 
+@mixin base-line-height-100 {
+  line-height: 100%;
+}
   
