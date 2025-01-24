@@ -18,6 +18,8 @@ const ApplicationSolutions = () => {
                     </React.Fragment>
                 )
             })}
+            <div className="application-solutions__empty-item-1"/>
+            <div className="application-solutions__empty-item-2"/>
         </div>
     )
 }
