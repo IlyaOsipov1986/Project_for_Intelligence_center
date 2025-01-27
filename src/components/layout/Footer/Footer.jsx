@@ -19,7 +19,7 @@ const Footer = () => {
                 </React.Fragment>
                 )
             })}
-            <div className='footer-nav-item-empty'>
+            <div className='footer-nav-item-empty-last'>
                 <div className='bordered-element-right'/>
             </div>
            <FooterBottom/>

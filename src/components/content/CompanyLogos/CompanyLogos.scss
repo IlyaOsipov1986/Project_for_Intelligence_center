@@ -7,4 +7,16 @@
     justify-content: center;
     border-left:1px solid $primary300;
     border-right:1px solid $primary300;
+
+    img {
+        @media (max-width: $tablet) {
+            width: 100px;
+        }  
+    }
+
+    @media (max-width: $tablet) {
+        gap: 0;
+        justify-content: space-between;
+        padding: 30px 20px;
+    }  
 }

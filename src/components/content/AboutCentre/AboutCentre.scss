@@ -40,11 +40,19 @@
         color: $white;
         @include base-20;
         @include medium;
+
+        @media (max-width: $tablet) {
+            @include base-18;
+        }    
     }
     & div:last-child {
         @include body-default;
         color: $default;
         border-bottom: none;
+
+        @media (max-width: $tablet) {
+            @include base-14;
+        }  
     }
 }
 
@@ -56,6 +64,10 @@
     width: 100%;
     border-bottom: 1px solid $primary300;
     @include font-open-sans;
+
+    @media (max-width: $tablet) {
+        padding: 20px;
+    }    
 }
 
 .about-centre__information-second {
@@ -78,6 +90,10 @@
     @include font-open-sans;
     @include body-default;
     color: $default;
+
+    @media (max-width: $tablet) {
+        @include base-14;
+    }  
 }
 
 .about-centre__information-second__img {

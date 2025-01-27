@@ -92,11 +92,19 @@
     h2 {
         @include h2;
         color: $white;
+
+        @media (max-width: $tablet) {
+            @include base-36;
+        }  
     }
     p {
         @include font-open-sans;
         @include body-default;
         @include text-middle-gray;
+
+        @media (max-width: $tablet) {
+            @include base-14;
+        }  
     }
 }
 
@@ -118,6 +126,11 @@
     height: 141px;
     @include font-open-sans;
     @include medium;
+
+    @media (max-width: $tablet) {
+        padding: 15px;
+        @include base-14;
+    }  
 }
 
 .solutions-card-black {

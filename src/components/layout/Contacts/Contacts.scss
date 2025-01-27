@@ -46,6 +46,10 @@
     width: 100%;
     h2 {
         @include h2;
+
+        @media(max-width: $laptop) {
+            @include base-30;
+        }
     }
 }
 
@@ -73,6 +77,10 @@
 
         @media(max-width: $laptop) {
             width: 300px;
+        }
+
+        @media(max-width: $tablet) {
+            width: 250px;
         }
     }
 }

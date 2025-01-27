@@ -41,6 +41,10 @@
     justify-content: space-around;
     border-right: 1px solid $primary300;
     border-left: 1px solid $primary300;
+
+    .team-person-card:last-child {
+        border-right: none;
+    }
 }
 
 .team-person-card {
@@ -54,6 +58,10 @@
 
     @media(max-width: $laptop) {
         padding: 80px 40px 60px 40px;
+    }
+
+    @media(max-width: $tablet) {
+        padding: 80px 20px 40px 20px;
     }
     
     img {
@@ -70,10 +78,18 @@
 
     h6 {
         @include h6;
+
+        @media(max-width: $tablet) {
+            @include base-18;
+        }
     }
 
     p {
         @include font-open-sans;
         @include text-middle-gray;
+
+        @media(max-width: $tablet) {
+            @include base-14;
+        }
     }
 }
