@@ -59,6 +59,14 @@
     @media(max-width: $middle-screen-size) {
         max-width: 580px;
     }
+
+    @media(max-width: $laptop) {
+        max-width: 500px;
+    }
+
+    @media(max-width: $tablet) {
+        max-width: 400px;
+    }
 }
 
 .slider-block__logo-item-up {
@@ -103,5 +111,13 @@
 
     @media(max-width: $middle-screen-size) {
         max-width: 480px;
+    }
+
+    @media(max-width: $laptop) {
+        max-width: 460px;
+    }
+
+    @media(max-width: $tablet) {
+        max-width: 380px;
     }
 }

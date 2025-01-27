@@ -15,6 +15,10 @@
     .calendar-events-row__container:nth-child(2) {
         padding-bottom: 80px;
     }
+
+    @media(max-width: $tablet) {
+        padding: 20px 0 0 20px;
+    }
 }
 
 .calendar-events__empty-block {
@@ -53,6 +57,11 @@
     @include text-red;
     @include bold;
     @include base-23;
+
+    @media(max-width: $tablet) {
+        @include base-20;
+        line-height: 18px;
+    }
 }
 
 .calendar-events-row__date-icon {
@@ -66,11 +75,19 @@
     gap: 13px;
     h6 {
         @include h6;
+
+        @media(max-width: $tablet) {
+            @include base-18;
+        }
     }
     p {
         @include text-word-wrap;
         @include body-default;
         @include text-middle-gray;
+
+        @media(max-width: $tablet) {
+            @include base-14;
+        }
     }
 }
 .calendar-events-row__arrow-btn {

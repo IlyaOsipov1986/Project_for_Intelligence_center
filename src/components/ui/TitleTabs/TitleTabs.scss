@@ -26,6 +26,12 @@
     &:active {
         color: $secondary600;
     }
+
+    @media(max-width: $tablet) {
+        @include base-12;
+        width: 100%;
+        padding: 15px 20px; 
+    }
 }
 
 .title-tabs__item:last-child {
