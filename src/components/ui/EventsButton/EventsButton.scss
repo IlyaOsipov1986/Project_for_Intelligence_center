@@ -59,4 +59,8 @@
   @include base-14;
   @include text-red;
   z-index: 4;
+
+  @media (max-width: $tablet) {
+    @include base-12;
+  }
 }

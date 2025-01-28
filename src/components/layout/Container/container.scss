@@ -11,16 +11,12 @@
   }
 
   @media (max-width: $tablet) {
-    width: 670px;
+    width: 870px;
   }
 
   @media (max-width: $mobile) {
     width: 100%;
     padding: 0 16px;
-  }
-
-  &_reading-page {
-    max-width: 1024px;
   }
 }
 

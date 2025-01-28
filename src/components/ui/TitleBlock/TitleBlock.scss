@@ -10,6 +10,17 @@
     padding: 40px;
     h2 {
         @include h2;
+        @media(max-width: $laptop) {
+            @include base-36;
+        }
+    }
+
+    @media(max-width: $laptop) {
+        padding: 35px;
+    }
+
+    @media(max-width: $tablet) {
+        padding: 30px;
     }
 }
 

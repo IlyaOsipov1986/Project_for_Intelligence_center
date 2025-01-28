@@ -57,11 +57,19 @@
     border-bottom: 1px solid $primary300;
     h6 {
         @include h6;
+
+        @media (max-width: $tablet) {
+           @include base-18;
+        }  
     }
     p {
         @include font-open-sans;
         @include text-middle-gray;
         @include base-16;
+
+        @media (max-width: $tablet) {
+            @include base-14;
+        }  
     }
 }
 
@@ -81,5 +89,9 @@
         @include font-open-sans;
         @include text-red;
         @include base-16;
+
+        @media (max-width: $tablet) {
+            @include base-14;
+        }  
     }
 }
