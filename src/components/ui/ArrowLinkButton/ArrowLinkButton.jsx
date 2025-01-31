@@ -15,5 +15,4 @@ ArrowLinkButton.propTypes = {
     title: PropTypes.string,
 }
 
-
 export default ArrowLinkButton;

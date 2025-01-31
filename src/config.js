@@ -216,9 +216,23 @@ export const teamPersonCardsData = [
     },
     {
         id: 3,
+        name: 'Амелин Константин Сергеевич',
+        position: 'И.о. директора Центра ИИ',
+        imgPerson: teamImageOne,
+        imgPersonHover: teamColorImageOne 
+    },
+    {
+        id: 4,
         name: '',
         position: '',
         imgPerson: null,
         imgPersonHover: null
-    }
+    },
+    {
+        id: 5,
+        name: 'Архипов Владислав Владимирович',
+        position: 'Руководитель юридического направления',
+        imgPerson: teamImageTwo,
+        imgPersonHover: teamColorImageTwo
+    },
 ]

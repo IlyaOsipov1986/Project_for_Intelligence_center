@@ -6,8 +6,11 @@ import TitleBlock from "../../ui/TitleBlock/TitleBlock";
 import TeamPersonCard from "../Team/TeamPersonCard";
 import RowLeftRightButtons from "../../ui/RowLeftRightButtons/RowLeftRightButtons";
 import { teamPersonCardsData } from "../../../config";
+import useCardsCarousel from "../../../utils/hooks/useCardsCarousel";
 
 const Team = () => {
+
+    const { visibleCards, nextGroup, prevGroup } = useCardsCarousel(teamPersonCardsData);
 
     return (
         <>
@@ -28,13 +31,16 @@ const Team = () => {
             <Divaider/>
             <Container>
                 <div className="team__row-btns">
-                    <RowLeftRightButtons/>
+                    {teamPersonCardsData?.length > 4 && <RowLeftRightButtons
+                        nextGroup={nextGroup}
+                        prevGroup={prevGroup}
+                    />}
                 </div>  
             </Container>
             <Divaider/>
             <Container>
                 <div className="team__card-wrap">
-                    {teamPersonCardsData.map((el) => {
+                    {visibleCards.map((el) => {
                         return (
                             <React.Fragment key={el.id}>
                                 <TeamPersonCard

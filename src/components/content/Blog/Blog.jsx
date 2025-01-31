@@ -16,7 +16,8 @@ const Blog = () => {
                     width={true}
                 />
                 <div className="blog__title-event-btn">
-                    <RowLeftRightButtons/>
+                    <RowLeftRightButtons
+                    />
                 </div>
             </div>
             <div className="blog__cards-block">
