@@ -8,8 +8,18 @@
     padding: 12px 23px; 
     gap: 52px;
     border: 1px solid $primary300;
-    img {
-        width: 32px;
-        cursor: pointer;
-    }
+}
+
+.row-left-right-buttons__btn-prev {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url('../../../assets/img/icons/arrowLeftRed.svg');
+}
+
+.row-left-right-buttons__btn-next {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url('../../../assets/img/icons/arrowRightBlack.svg');
 }

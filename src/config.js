@@ -234,5 +234,5 @@ export const teamPersonCardsData = [
         position: 'Руководитель юридического направления',
         imgPerson: teamImageTwo,
         imgPersonHover: teamColorImageTwo
-    },
+    }
 ]
