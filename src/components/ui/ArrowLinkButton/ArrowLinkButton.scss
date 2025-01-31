@@ -21,11 +21,27 @@
             background-image: url(../../../assets//img/icons/arrowUpWhite.svg);
         }
     }
+
+    @media(max-width: $laptop) {
+        padding: 30px;
+    }
+
+    @media(max-width: $tablet) {
+        padding: 20px;
+    }
 }
 
 .arrow-link-button__title {
     @include base-40;
     @include medium;
+
+    @media(max-width: $laptop) {
+        @include base-36;
+    }
+
+    @media(max-width: $tablet) {
+        @include base-30;
+    }
 }
 
 .arrow-link-button__icon {
@@ -33,4 +49,5 @@
     object-fit: cover;
     width: 40px;
     height: 40px;
+
 }

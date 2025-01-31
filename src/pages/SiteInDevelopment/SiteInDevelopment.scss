@@ -77,6 +77,14 @@
         @include bold;
         @include base-135;
         @include base-line-height-100;
+
+        @media(max-width: $laptop) {
+            @include base-100;
+        }
+
+        @media(max-width: $tablet) {
+            @include base-70;
+        }
     }
 }
 
@@ -97,6 +105,18 @@
     p {
         @include font-open-sans;
         @include base-16;
+
+        @media(max-width: $laptop) {
+            @include base-14;
+        }
+    }
+
+    @media(max-width: $laptop) {
+        padding: 0 30px 30px 30px;
+    }
+
+    @media(max-width: $tablet) {
+        padding: 0 20px 20px 20px;
     }
 }
 

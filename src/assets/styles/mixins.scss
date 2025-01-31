@@ -81,6 +81,14 @@
   font-size: 135px;
 }
 
+@mixin base-100 {
+  font-size: 100px;
+}
+
+@mixin base-70 {
+  font-size: 70px;
+}
+
 @mixin base-40 {
   font-size: 40px;
 }
