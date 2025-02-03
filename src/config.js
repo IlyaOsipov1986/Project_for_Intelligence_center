@@ -31,6 +31,11 @@ import teamColorImageTwo from "../src/assets/img/teamColorImageTwo.png";
 
 export const config = {}
 
+export  const urlPage = {
+    home: '/',
+    partners: 'partners'
+}
+
 export const footerData = [
     {
         id: 0,

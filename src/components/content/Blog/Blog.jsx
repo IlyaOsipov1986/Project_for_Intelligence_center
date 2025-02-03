@@ -4,8 +4,12 @@ import TitleBlock from "../../ui/TitleBlock/TitleBlock";
 import RowLeftRightButtons from "../../ui/RowLeftRightButtons/RowLeftRightButtons";
 import BlogCard from "../Blog/BlogCard";
 import { blogCardData } from "../../../config";
+import useCardsCarousel from "../../../utils/hooks/useCardsCarousel.js";
 
 const Blog = () => {
+
+    const { visibleCards, nextGroup, prevGroup } = useCardsCarousel(blogCardData, 3);
+
     return (
         <div className="blog__container">
             <div className="blog__title-wrap">
@@ -16,12 +20,14 @@ const Blog = () => {
                     width={true}
                 />
                 <div className="blog__title-event-btn">
-                    <RowLeftRightButtons
-                    />
+                    {blogCardData.length > 3 && <RowLeftRightButtons
+                        nextGroup={nextGroup}
+                        prevGroup={prevGroup}
+                    />}
                 </div>
             </div>
             <div className="blog__cards-block">
-                {blogCardData.map((el) => {
+                {visibleCards.map((el) => {
                     return (
                         <React.Fragment key={el.id}>
                             <BlogCard

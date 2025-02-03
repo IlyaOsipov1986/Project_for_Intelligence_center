@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-const useCardsCarousel = (cards) => {
+const useCardsCarousel = (cards, maxAmountItems) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const maxVisibleCards = 4;
+    const maxVisibleCards = maxAmountItems;
 
     useEffect(() => {
         let isMounted = true;
 
-        if(cards.length <= maxVisibleCards) {
+        if (cards.length <= maxVisibleCards) {
             isMounted && setCurrentIndex(0);
         }
 

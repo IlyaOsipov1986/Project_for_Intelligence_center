@@ -10,7 +10,7 @@ import useCardsCarousel from "../../../utils/hooks/useCardsCarousel";
 
 const Team = () => {
 
-    const { visibleCards, nextGroup, prevGroup } = useCardsCarousel(teamPersonCardsData);
+    const { visibleCards, nextGroup, prevGroup } = useCardsCarousel(teamPersonCardsData, 4);
 
     return (
         <>
