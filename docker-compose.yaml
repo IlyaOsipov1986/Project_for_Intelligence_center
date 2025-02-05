@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  meter-front:
+    container_name: project_for_intelegence_centre
+    restart: always
+    build: .
+    image: project_for_intelegence_centre:latest
+    ports:
+      - 3030:80
