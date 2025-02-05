@@ -31,7 +31,7 @@ const Team = () => {
             <Divaider/>
             <Container>
                 <div className="team__row-btns">
-                    {teamPersonCardsData?.length > 4 && <RowLeftRightButtons
+                    {teamPersonCardsData?.length >= 4 && <RowLeftRightButtons
                         nextGroup={nextGroup}
                         prevGroup={prevGroup}
                     />}

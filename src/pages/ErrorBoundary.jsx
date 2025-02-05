@@ -28,7 +28,7 @@ const ErrorBoundary = () => {
               правильность введенного адреса страницы
             </p>
 
-            <Link isLink={"/"} style={{color: '#C74E4E'}}>
+            <Link to={"/"} style={{color: '#C74E4E'}}>
               Вернуться на главную
             </Link>
           </section>

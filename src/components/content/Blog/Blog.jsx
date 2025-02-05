@@ -20,7 +20,7 @@ const Blog = () => {
                     width={true}
                 />
                 <div className="blog__title-event-btn">
-                    {blogCardData.length > 3 && <RowLeftRightButtons
+                    {blogCardData.length >= 3 && <RowLeftRightButtons
                         nextGroup={nextGroup}
                         prevGroup={prevGroup}
                     />}
