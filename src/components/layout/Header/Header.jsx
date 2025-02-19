@@ -1,16 +1,26 @@
 import '../Header/Header.scss';
 import Nav from './Nav';
 import logotypeIIcentre from '../../../assets/img/icons/logotypeIIcentre.svg';
+import { Link } from 'react-router-dom';
+import HeaderRectangleButton from "./../../ui/HeaderRectangleButton/HeaderRectangleButton";
 
 const Header = () => {
     return (
         <header className='header'>
             <div className='header-container'>
-                <img className='header__logo' src={logotypeIIcentre} alt='иконка'/>
+                <Link to='/'>
+                    <img className='header__logo' src={logotypeIIcentre} alt='иконка'/>
+                </Link>
                 <div className='topbar__block'>
                     <Nav/>
                 </div>
-                <a className='header-link-icon' href='/'/>
+                <div className='header-link__block'>
+                    <a className='header-link-icon' href='/'/>
+                    <HeaderRectangleButton
+                        titleButton="Оставить заявку"
+                        link="contact-with-us"
+                    />
+                </div>
             </div>
         </header>
     )

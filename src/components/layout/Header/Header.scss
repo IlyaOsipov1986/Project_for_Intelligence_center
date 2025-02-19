@@ -53,7 +53,7 @@
 .nav ul {
     display: flex;
     align-items: center;
-    gap: 26px;
+    gap: 50px;
 
 @media(max-width: $laptop) {
     gap: 20px;
@@ -65,6 +65,12 @@
         align-items: flex-start;
         gap: 26px;
     }
+}
+
+.header-link__block {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
 }
 
 .header-link-icon {

@@ -33,7 +33,8 @@ export const config = {}
 
 export  const urlPage = {
     home: '/',
-    partners: 'partners'
+    partners: 'partners',
+    contactWithUs: 'contact-with-us'
 }
 
 export const footerData = [
