@@ -1,4 +1,4 @@
-import "../EmptyCaps/EmptyCaps.scss";
+import "./EmptyCaps.scss";
 
 const EmptyCaps = () => {
     return (

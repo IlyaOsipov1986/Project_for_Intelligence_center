@@ -6,7 +6,7 @@ const HeaderRectangleButton = ({titleButton, link}) => {
 
     return (
         <Link to={`/${link}`} className="header-rectangle-button__container" >
-            {titleButton}
+            <p className="header-rectangle-button__text-btn">{titleButton}</p>
         </Link>
     )
 }

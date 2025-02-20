@@ -177,6 +177,10 @@
   font-family: 'Open Sans';
 }
 
+@mixin font-roboto-mono {
+  font-family: 'Roboto Mono';
+}
+
 @mixin text-middle-gray {
   color: $primary500;
 }
