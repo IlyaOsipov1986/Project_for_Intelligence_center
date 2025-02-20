@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./HeaderRectangleButton.scss";
 import PropTypes from 'prop-types';
 
-const HeaderRectangleButton = ({titleButton, link}) => {
+const HeaderRectangleButton = ({titleButton, link=''}) => {
 
     return (
         <Link to={`/${link}`} className="header-rectangle-button__container" >

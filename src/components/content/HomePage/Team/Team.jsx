@@ -1,12 +1,12 @@
-import "../Team/Team.scss";
+import "./Team.scss";
 import React from "react";
-import Container from "../../layout/Container/Container";
-import Divaider from "../../ui/Divaider/Divaider";
-import TitleBlock from "../../ui/TitleBlock/TitleBlock";
-import TeamPersonCard from "../Team/TeamPersonCard";
-import RowLeftRightButtons from "../../ui/RowLeftRightButtons/RowLeftRightButtons";
-import { teamPersonCardsData } from "../../../config";
-import useCardsCarousel from "../../../utils/hooks/useCardsCarousel";
+import Container from "../../../layout/Container/Container.jsx";
+import Divaider from "../../../ui/Divaider/Divaider.jsx";
+import TitleBlock from "../../../ui/TitleBlock/TitleBlock.jsx";
+import TeamPersonCard from "./TeamPersonCard.jsx";
+import RowLeftRightButtons from "../../../ui/RowLeftRightButtons/RowLeftRightButtons.jsx";
+import { teamPersonCardsData } from "../../../../config.js";
+import useCardsCarousel from "../../../../utils/hooks/useCardsCarousel.js";
 
 const Team = () => {
 

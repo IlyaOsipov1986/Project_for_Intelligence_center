@@ -1,8 +1,8 @@
-import TitleBlock from "../../ui/TitleBlock/TitleBlock";
-import TitleTabs from "../../ui/TitleTabs/TitleTabs";
-import CalendarEvents from "../../ui/CalendarEvents/CalendarEvents";
-import '../CenterCalendar/CenterCalendar.scss';
-import { titleTabsCalendarCentre } from "../../../config";
+import TitleBlock from "../../../ui/TitleBlock/TitleBlock.jsx";
+import TitleTabs from "../../../ui/TitleTabs/TitleTabs.jsx";
+import CalendarEvents from "../../../ui/CalendarEvents/CalendarEvents.jsx";
+import './CenterCalendar.scss';
+import { titleTabsCalendarCentre } from "../../../../config.js";
 
 const CenterCalendar = () => {
     
@@ -12,7 +12,7 @@ const CenterCalendar = () => {
                 <div/>
                 <div className="center-calendar__title-items">
                     <TitleBlock
-                        title="Календарь Центра"
+                        title="Мероприятия"
                     />
                     <div className="center-calendar__title-tabs">
                         <TitleTabs

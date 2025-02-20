@@ -58,6 +58,7 @@
   @include regular-500;
   @include base-14;
   @include text-red;
+  @include font-roboto-mono;
   z-index: 4;
 
   @media (max-width: $tablet) {

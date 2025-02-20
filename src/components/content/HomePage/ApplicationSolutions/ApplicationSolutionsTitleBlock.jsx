@@ -1,6 +1,6 @@
-import "../ApplicationSolutions/ApplicationSolutions.scss";
-import solutionsImageTitle from "../../../assets/img/solutionsImageTitle.png";
-import EventsButton from "../../ui/EventsButton/EventsButton";
+import "./ApplicationSolutions.scss";
+import solutionsImageTitle from "../../../../assets/img/solutionsImageTitle.png";
+import EventsButton from "../../../ui/EventsButton/EventsButton.jsx";
 
 const ApplicationSolutionsTitleBlock = () => {
     return (

@@ -18,7 +18,6 @@ const Header = () => {
                     <a className='header-link-icon' href='/'/>
                     <HeaderRectangleButton
                         titleButton="ОСТАВИТЬ ЗАЯВКУ"
-                        link="contact-with-us"
                     />
                 </div>
             </div>

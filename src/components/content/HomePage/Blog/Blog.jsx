@@ -1,10 +1,10 @@
-import "../Blog/Blog.scss";
+import "./Blog.scss";
 import React from "react";
-import TitleBlock from "../../ui/TitleBlock/TitleBlock";
-import RowLeftRightButtons from "../../ui/RowLeftRightButtons/RowLeftRightButtons";
-import BlogCard from "../Blog/BlogCard";
-import { blogCardData } from "../../../config";
-import useCardsCarousel from "../../../utils/hooks/useCardsCarousel.js";
+import TitleBlock from "../../../ui/TitleBlock/TitleBlock.jsx";
+import RowLeftRightButtons from "../../../ui/RowLeftRightButtons/RowLeftRightButtons.jsx";
+import BlogCard from "./BlogCard.jsx";
+import { blogCardData } from "../../../../config.js";
+import useCardsCarousel from "../../../../utils/hooks/useCardsCarousel.js";
 
 const Blog = () => {
 

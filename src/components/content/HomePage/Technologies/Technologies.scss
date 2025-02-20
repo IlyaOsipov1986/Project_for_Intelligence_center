@@ -1,0 +1,68 @@
+@import "../../../../assets/styles/vars.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+.technologies-container {
+    display: grid;
+    grid-template: 133px 123px 412px / 1fr 1fr;
+    border-left: 1px solid $primary300;
+    border-right: 1px solid $primary300;
+    border-bottom: 1px solid $primary300;
+}
+
+.technologies-empty-1 {
+    display: flex;
+    border-right: 1px solid $primary300;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.technologies-empty-2 {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.technologies-empty-3 {
+    border-top: 1px solid $primary300;
+    border-bottom: 1px solid $primary300;
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.technologies-cards-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    & .technologies-card:last-child {
+        border-right: none;
+    }
+}
+
+.technologies-card {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-right: 1px solid $primary300;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.technologies-card-title {
+  @include base-20;
+  @include medium;
+  color: $white;
+  margin-bottom: 47px;
+}

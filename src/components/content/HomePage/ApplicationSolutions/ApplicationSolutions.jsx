@@ -1,8 +1,8 @@
-import "../ApplicationSolutions/ApplicationSolutions.scss";
+import "./ApplicationSolutions.scss";
 import React from "react";
-import ApplicationSolutionsTitleBlock from "../ApplicationSolutions/ApplicationSolutionsTitleBlock";
-import ApplicationSolutionsCard from "../ApplicationSolutions/ApplicationSolutionsCard";
-import { applicationSolutionsDataCard } from "../../../config";
+import ApplicationSolutionsTitleBlock from "./ApplicationSolutionsTitleBlock.jsx";
+import ApplicationSolutionsCard from "./ApplicationSolutionsCard.jsx";
+import { applicationSolutionsDataCard } from "../../../../config.js";
 
 const ApplicationSolutions = () => {
     return (

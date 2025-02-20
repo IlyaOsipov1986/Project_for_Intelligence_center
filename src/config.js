@@ -28,6 +28,9 @@ import teamImageOne from "../src/assets/img/teamImageOne.png";
 import teamColorImageOne from "../src/assets/img/teamColorImageOne.png"; 
 import teamImageTwo from "../src/assets/img/teamImageTwo.png";
 import teamColorImageTwo from "../src/assets/img/teamColorImageTwo.png";
+import technologiesImageOne from "../src/assets/img/technologiesImageOne.png";
+import technologiesImageTwo from "../src/assets/img/technologiesImageTwo.png";
+import technologiesImageThree from "../src/assets/img/technologiesImageThree.png";
 
 export const config = {}
 
@@ -66,13 +69,16 @@ export const footerData = [
 
 export const titleTabsCalendarCentre = [
     {
+        name: 'ВСЕ'
+    },
+    {
         name: 'ПАРТНЕРАМ'
     },
     {
-        name: 'ИССЛЕДОВАНИЯ'
+        name: 'НАУКА'
     },
     {
-        name: 'ОБРАЗОВАНИЕ'
+        name: 'ОБУЧЕНИЕ'
     }
 ]
 
@@ -227,4 +233,22 @@ export const teamPersonCardsData = [
         imgPerson: null,
         imgPersonHover: null
     },
+]
+
+export const technologiesCardData = [
+    {
+        id: 0,
+        title: 'Платформа AIoT',
+        bgImage: technologiesImageOne
+    },
+    {
+        id: 1,
+        title: 'Виброаналитика',
+        bgImage: technologiesImageTwo
+    },
+    {
+        id: 2,
+        title: 'Кибериммунитет',
+        bgImage: technologiesImageThree
+    }
 ]
