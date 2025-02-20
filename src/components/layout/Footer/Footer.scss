@@ -8,20 +8,15 @@
   box-sizing: border-box;
   max-width: 100%;
   width: 1756px;
-  border: 1px solid $primary300;
- 
-  @media(max-width: $middle-screen-size) {
-    width: 1320px;
-  }
+  border-top: 1px solid $primary300;
+  padding: 0 15px;
 
+  @media(max-width: $middle-screen-size) {
+    padding: 0;
+  }
+ 
   @media(max-width: $laptop) {
     grid-template: 280px 63px / auto repeat(3, 331px) auto;
-  }
-
-  @media(max-width: 1155px) {
-    grid-template: 280px 63px / 1fr 1fr 1fr;
-    padding: 0 15px;
-    border: none;
   }
 
   .footer-nav-item-empty:nth-child(1) {
@@ -29,16 +24,13 @@
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+    display: flex;
+    border-left: 1px solid $primary300;
 
-    @media(max-width: 1155px) {
-      display: none;
-    }
   }
 
   .footer-nav-item-empty-last {
-    @media(max-width: 1155px) {
-      display: none;
-    }
+    border-right: 1px solid $primary300;
   }
 
   .footer-nav-item:nth-child(2) {
@@ -87,6 +79,8 @@
   align-items: center;
   justify-content: center;
   border-top: 1px solid $primary300;
+  border-right: 1px solid $primary300;
+  border-left: 1px solid $primary300;
 }
 
 .footer__sign {
@@ -106,6 +100,9 @@
   display: block;
   left: -15px;
   top: -10px;
+  @media(max-width: $middle-screen-size) {
+    display: none;
+  }
 }
 
 .bordered-element-left::after {
@@ -128,6 +125,9 @@
   display: block;
   right: -15px;
   top: -10px;
+  @media(max-width: $middle-screen-size) {
+    display: none;
+  }
 }
 
 .bordered-element-right::after {

@@ -41,7 +41,7 @@ const Slider = () => {
                     <animated.img
                         src={sliderImageTwo}
                           style={{
-                            position: 'relaite',
+                            position: 'absolute',
                             bottom: 0,
                             left: 0,
                             width: '100%',
