@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 const TitleTabs = ({tabs=[]}) => {
 
     const [activeTab, setActiveTab] = useState('ВСЕ');
-    const onHandlerClick = (nameTab) => { setActiveTab(nameTab) }
+
+    const onHandlerTabClick = (nameTab) => { setActiveTab(nameTab) }
 
     return (
         <div className='title-tabs__container'>
             {tabs.map((el, i) => {
                 return (
-                    <button key={i} onClick={() => onHandlerClick(el.name)} className={`title-tabs__item ${el.name === activeTab ? 'active' : ''}`}>
+                    <button key={i} onClick={() => onHandlerTabClick(el.name)} className={`title-tabs__item ${el.name === activeTab ? 'active' : ''}`}>
                         {el.name}
                     </button>
                 )
