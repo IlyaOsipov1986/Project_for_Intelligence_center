@@ -1,8 +1,8 @@
-import "../AboutCentre/AboutCentre.scss";
+import "./AboutCentre.scss";
 import { useState } from "react";
-import TitleBlock from "../../ui/TitleBlock/TitleBlock";
-import EventsButton from "../../ui/EventsButton/EventsButton";
-import { aboutCentreItemsTextIcon } from "../../../config";
+import TitleBlock from "../../../ui/TitleBlock/TitleBlock.jsx";
+import EventsButton from "../../../ui/EventsButton/EventsButton.jsx";
+import { aboutCentreItemsTextIcon } from "../../../../config.js";
 
 const AboutCentre = () => {
 

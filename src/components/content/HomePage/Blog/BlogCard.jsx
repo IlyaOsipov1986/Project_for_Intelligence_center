@@ -1,6 +1,6 @@
-import "../Blog/Blog.scss";
+import "./Blog.scss";
 import PropTypes from 'prop-types';
-import arrowRightRed from "../../../assets/img/icons/arrowRightRed.svg";
+import arrowRightRed from "../../../../assets/img/icons/arrowRightRed.svg";
 
 const BlogCard = ({item}) => {
     return (

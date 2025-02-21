@@ -71,6 +71,7 @@
     display: flex;
     flex-direction: row;
     gap: 35px;
+    align-items: center;
 }
 
 .header-link-icon {
@@ -78,7 +79,7 @@
     background-image: url('../../../assets/img/icons/tgIconBlack.svg');
     width: 28px;
     height: 30px;
-    transition: color 0.3s;
+    transition: background-image 0.4s ease;
     &:hover {
       background-image: url('../../../assets/img/icons/tgIconRed.svg');
     }

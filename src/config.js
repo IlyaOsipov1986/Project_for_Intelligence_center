@@ -28,6 +28,9 @@ import teamImageOne from "../src/assets/img/teamImageOne.png";
 import teamColorImageOne from "../src/assets/img/teamColorImageOne.png"; 
 import teamImageTwo from "../src/assets/img/teamImageTwo.png";
 import teamColorImageTwo from "../src/assets/img/teamColorImageTwo.png";
+import technologiesImageOne from "../src/assets/img/technologiesImageOne.png";
+import technologiesImageTwo from "../src/assets/img/technologiesImageTwo.png";
+import technologiesImageThree from "../src/assets/img/technologiesImageThree.png";
 
 export const config = {}
 
@@ -66,28 +69,46 @@ export const footerData = [
 
 export const titleTabsCalendarCentre = [
     {
+        name: 'ВСЕ'
+    },
+    {
         name: 'ПАРТНЕРАМ'
     },
     {
-        name: 'ИССЛЕДОВАНИЯ'
+        name: 'НАУКА'
     },
     {
-        name: 'ОБРАЗОВАНИЕ'
+        name: 'ОБУЧЕНИЕ'
     }
 ]
 
 export const calendarEventsData = [
     {
         id: 0,
-        date: '24.12',
+        date: '24.02',
+        time: '18.00-19.30',
         title: 'Безградиентные методы оптимизации для функций с гельдеровым градиентом',
-        speaker: 'Шибаев Иннокентий Андреевич (Яндекс, выпускник аспирантуры МФТИ)'
+        speaker: 'Имя Фамилия Отчество',
+        speakerJobTitle: 'Яндекс, выпускник аспирантуры МФТИ',
+        speakerImg: teamColorImageOne
     },
     {
         id: 1,
-        date: '26.12',
+        date: '26.02',
+        time: '18.00-19.30',
         title: 'Оптимизация без границ: как обучать большие модели эффективнее',
-        speaker: 'Шибаев Иннокентий Андреевич (Яндекс, выпускник аспирантуры МФТИ)'
+        speaker: 'Имя Фамилия Отчество',
+        speakerJobTitle: 'Доктор технических наук / Самарский федеральный исследовательский центр РАН',
+        speakerImg: null
+    },
+    {
+        id: 2,
+        date: '26.02',
+        time: '18.00-19.30',
+        title: 'Оптимизация без границ: как обучать большие модели эффективнее',
+        speaker: 'Имя Фамилия Отчество',
+        speakerJobTitle: 'Доктор технических наук / Самарский федеральный исследовательский центр РАН',
+        speakerImg: null
     }
 ]
 
@@ -227,4 +248,22 @@ export const teamPersonCardsData = [
         imgPerson: null,
         imgPersonHover: null
     },
+]
+
+export const technologiesCardData = [
+    {
+        id: 0,
+        title: 'Платформа AIoT',
+        bgImage: technologiesImageOne
+    },
+    {
+        id: 1,
+        title: 'Виброаналитика',
+        bgImage: technologiesImageTwo
+    },
+    {
+        id: 2,
+        title: 'Кибериммунитет',
+        bgImage: technologiesImageThree
+    }
 ]

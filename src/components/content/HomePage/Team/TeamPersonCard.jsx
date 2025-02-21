@@ -1,5 +1,5 @@
-import "../Team/Team.scss";
-import imgPersonEmpty from "../../../assets/img/teamEmptyImage.png";
+import "./Team.scss";
+import imgPersonEmpty from "../../../../assets/img/teamEmptyImage.png";
 import { useState } from "react";
 import PropTypes from 'prop-types';
 

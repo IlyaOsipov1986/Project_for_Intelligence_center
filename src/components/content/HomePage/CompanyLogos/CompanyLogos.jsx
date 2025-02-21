@@ -1,5 +1,5 @@
-import "../CompanyLogos/CompanyLogos.scss";
-import { listCompanyData } from "../../../config";
+import "./CompanyLogos.scss";
+import { listCompanyData } from "../../../../config.js";
 
 const CompanyLogos = () => {
     return (

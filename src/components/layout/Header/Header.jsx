@@ -17,8 +17,7 @@ const Header = () => {
                 <div className='header-link__block'>
                     <a className='header-link-icon' href='/'/>
                     <HeaderRectangleButton
-                        titleButton="Оставить заявку"
-                        link="contact-with-us"
+                        titleButton="ОСТАВИТЬ ЗАЯВКУ"
                     />
                 </div>
             </div>

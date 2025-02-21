@@ -12,11 +12,11 @@
     position: relative;
     flex-direction: column;
     padding: 50px 0 0 40px;
-    .calendar-events-row__container:nth-child(2) {
+
+    .calendar-events-row__wrap:last-child .calendar-events-row__container {
         padding-bottom: 80px;
     }
-
-    @media(max-width: $tablet) {
+    @media(max-width: $laptop) {
         padding: 20px 0 0 20px;
     }
 }
@@ -32,53 +32,84 @@
 }
 
 .calendar-events__empty-block > div:first-child {
-    border-right:1px solid $primary300;
+    border-right: 1px solid $primary300;
+}
+.calendar-events-row__wrap {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+    grid-template-rows: auto;
+    align-items: center;
 }
 
 .calendar-events-row__container {
     display: grid;
-    grid-template-columns: 128px 640px auto;
+    grid-template-columns: 640px 1fr;
     grid-template-rows: auto;
-    padding: 30px 40px 32px 0;
+    padding: 41px 40px 32px 111px;
     border-left:1px solid $primary300;
     border-top:1px solid $primary300;
     cursor: pointer;
-}
-
-.calendar-events-row__container:first-child {
-    padding: 0 40px 32px 0;
-    border-top:none;
-}
-
-.calendar-events-row__date {
-    padding-left: 24px;
+    margin-left: 88px;
     position: relative;
-    line-height: 23px;
-    @include text-red;
-    @include bold;
-    @include base-23;
 
-    @media(max-width: $tablet) {
-        @include base-20;
-        line-height: 18px;
+    @media(max-width: $laptop) {
+        grid-template-columns: 540px 1fr;
+        padding: 41px 40px 32px 80px;
+        margin-left: 60px;
     }
 }
 
-.calendar-events-row__date-icon {
+.calendar-events-row__wrap:first-child > .calendar-events-row__container  {
+    padding: 0 40px 32px 111px;
+    border-top: none;
+    .calendar-events-row__speaker-image {
+        top: 0;
+    }
+    @media(max-width: $laptop) {
+        padding: 0 40px 32px 80px;
+        margin-left: 60px;
+    }
+}
+
+.calendar-events-row__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    @include text-red;
+    @include bold;
+    @include base-27;
+    @include font-roboto-mono;
+
+    @media(max-width: $tablet) {
+        @include base-20;
+    }
+}
+
+.calendar-events-row__date-time {
+    @include base-16;
+    @include text-middle-gray;
+    @include regular;
+}
+
+.calendar-events-row__speaker-image {
     position: absolute;
-    width: 16px;
-    left: -8px;
-} 
+    width: 90px;
+    left: -40px;
+    top: 40px;
+}
+
 .calendar-events-row__title {
     display: flex;
     flex-direction: column;
     gap: 13px;
     h6 {
-        @include h6;
-
-        @media(max-width: $tablet) {
-            @include base-18;
-        }
+        @include base-18;
+        color: $default;
+    }
+    h5 {
+        @include base-16;
+        color: $default;
     }
     p {
         @include text-word-wrap;
