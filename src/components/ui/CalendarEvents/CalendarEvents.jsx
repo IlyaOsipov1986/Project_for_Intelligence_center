@@ -7,7 +7,7 @@ import useFetchEvents from "../../../utils/fetchers/useFetchEvents.js";
 
 const CalendarEvents = () => {
 
-    const { dataEvents, isLoading } = useFetchEvents();
+    const { dataEvents } = useFetchEvents();
     const calendarEventsDataLength = dataEvents.length;
 
     return (

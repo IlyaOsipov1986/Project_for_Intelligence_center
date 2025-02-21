@@ -1,7 +1,9 @@
 import "../../ui/SocialNetworksBlock/SocialNetworksBlock.scss";
+import React from "react";
 import PropTypes from 'prop-types';
 import EventsButton from "../EventsButton/EventsButton";
 import { useState } from "react";
+import SocialNetworkIcon from "../SocialNetworkIcon/SocialNetworkIcon.jsx";
 
 const SocialNetworksBlock = ({activeBtn=true, titleEventBtn='', socialData=[] }) => {
 
@@ -16,12 +18,15 @@ const SocialNetworksBlock = ({activeBtn=true, titleEventBtn='', socialData=[] })
             }
             {socialData.map((el, i) => {
                 return (
-                    <img key={i}
-                        className="social-networks-block__icon" 
-                        onMouseEnter={() => setIsHovered(i)} 
-                        onMouseLeave={() => setIsHovered(null)}
-                        src={isHovered === i ? el.imgHover : el.img} alt=""
-                    />
+                    <React.Fragment key={i}>
+                        <SocialNetworkIcon
+                            el={el}
+                            activeHover={true}
+                            index={i}
+                            isHovered={isHovered}
+                            setIsHovered={setIsHovered}
+                        />
+                    </React.Fragment>
                 )
             })}
         </div>

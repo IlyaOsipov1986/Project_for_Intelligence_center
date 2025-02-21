@@ -108,11 +108,13 @@ export const calendarEventsData = [
 export const socialNetworksCalendarData = [
     {
         img: tgIconSqure,
-        imgHover: tgIconSqureRed
+        imgHover: tgIconSqureRed,
+        link: ''
     },
     {
         img: vkIconSqure,
-        imgHover: vkIconSqureRed
+        imgHover: vkIconSqureRed,
+        link: ''
     }
 ]
 

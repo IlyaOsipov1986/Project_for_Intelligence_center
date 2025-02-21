@@ -36,6 +36,7 @@ const Header = () => {
                     </div>
                     {isMobile &&
                         <BurgerButton
+                            mobileMenuShown={mobileMenuShown}
                             setMobileMenuShown={setMobileMenuShown}
                         />
                     }
