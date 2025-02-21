@@ -15,7 +15,7 @@ const Blog = () => {
             <div className="blog__title-wrap">
                 <TitleBlock
                     title="Блог"
-                    titleBtn="ВСЕ СТАТЬИ"
+                    titleBtn="ВСЕ ПУБЛИКАЦИИ"
                     activeBtn={true}
                     width={true}
                 />

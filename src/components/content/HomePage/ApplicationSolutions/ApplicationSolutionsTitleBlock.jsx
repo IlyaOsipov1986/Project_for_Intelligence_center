@@ -10,7 +10,7 @@ const ApplicationSolutionsTitleBlock = () => {
                 <p>Проекты, реализованные в интересах индустриальных партнеров</p>
             </div>
             <EventsButton
-                title="ПАРТНЕРАМ"
+                title="ВСЕ ПРОЕКТЫ"
             />
         </div>
     )

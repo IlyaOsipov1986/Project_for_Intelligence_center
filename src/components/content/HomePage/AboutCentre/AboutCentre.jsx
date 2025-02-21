@@ -14,11 +14,9 @@ const AboutCentre = () => {
                 <TitleBlock
                     title="О Цетре"
                     width={true}
+                    activeArrowBtn={true}
                 />
                 <div className="about-centre__title-event-btn">
-                    <EventsButton
-                        title="О НАС"
-                    />
                 </div>
             </div>
             <div className="about-centre__information-wrap">

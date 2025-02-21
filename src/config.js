@@ -32,7 +32,9 @@ import technologiesImageOne from "../src/assets/img/technologiesImageOne.png";
 import technologiesImageTwo from "../src/assets/img/technologiesImageTwo.png";
 import technologiesImageThree from "../src/assets/img/technologiesImageThree.png";
 
-export const config = {}
+export const config = {
+    api_url: 'https://679f6fc024322f8329c3ac4e.mockapi.io'
+}
 
 export  const urlPage = {
     home: '/',
@@ -94,15 +96,6 @@ export const calendarEventsData = [
     },
     {
         id: 1,
-        date: '26.02',
-        time: '18.00-19.30',
-        title: 'Оптимизация без границ: как обучать большие модели эффективнее',
-        speaker: 'Имя Фамилия Отчество',
-        speakerJobTitle: 'Доктор технических наук / Самарский федеральный исследовательский центр РАН',
-        speakerImg: null
-    },
-    {
-        id: 2,
         date: '26.02',
         time: '18.00-19.30',
         title: 'Оптимизация без границ: как обучать большие модели эффективнее',

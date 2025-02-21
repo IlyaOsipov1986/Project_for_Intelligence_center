@@ -19,11 +19,12 @@
     @include font-open-sans;
     @include base-14;
     @include medium;
+    transition: color 0.3s ease;
 
     &:hover {
         color: $secondary600;
     }
-    &:active {
+    &.active {
         color: $secondary600;
     }
 

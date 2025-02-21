@@ -1,15 +1,19 @@
 import '../TitleTabs/TitleTabs.scss';
+import {useState} from "react";
 import PropTypes from 'prop-types';
 
 const TitleTabs = ({tabs=[]}) => {
+
+    const [activeTab, setActiveTab] = useState('ВСЕ');
+    const onHandlerClick = (nameTab) => { setActiveTab(nameTab) }
 
     return (
         <div className='title-tabs__container'>
             {tabs.map((el, i) => {
                 return (
-                    <div key={i} className='title-tabs__item'>
+                    <button key={i} onClick={() => onHandlerClick(el.name)} className={`title-tabs__item ${el.name === activeTab ? 'active' : ''}`}>
                         {el.name}
-                    </div>
+                    </button>
                 )
             })}
         </div>

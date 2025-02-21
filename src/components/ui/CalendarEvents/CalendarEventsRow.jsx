@@ -3,10 +3,17 @@ import ArrowRedButton from "../ArrowRedButton/ArrowRedButton";
 import "../CalendarEvents/CalendarEvents.scss";
 import emptyImage from '../../../assets/img/teamEmptyImage.png';
 import PropTypes from 'prop-types';
+import classNames from "classnames";
+import {findIsLastElement} from "../../../utils/utils.js";
 // import redSqureFill from "../../../assets/img/icons/redSqureFill.svg";
 // import redSqureEmpty from "../../../assets/img/icons/redSqureEmpty.svg";
 
-const CalendarEventsRow = ({item}) => {
+const CalendarEventsRow = ({ item, calendarEventsDataLength, dataEvents }) => {
+
+    const calendarEventsRowClass = classNames({
+        'calendar-events-row__container': true,
+        'calendar-events-row__last-child' : calendarEventsDataLength === 1 || findIsLastElement(dataEvents, item.index),
+    });
 
     const [isHovered, setIsHovered] = useState(null);
 
@@ -16,7 +23,7 @@ const CalendarEventsRow = ({item}) => {
                 {item.date}
                 <span className="calendar-events-row__date-time">{item.time}</span>
             </div>
-            <div className="calendar-events-row__container"
+            <div className={calendarEventsRowClass}
                  onMouseEnter={() => setIsHovered(item.id)}
                  onMouseLeave={() => setIsHovered(null)}
             >
@@ -37,7 +44,9 @@ const CalendarEventsRow = ({item}) => {
 }
 
 CalendarEventsRow.propTypes = {
-    item: PropTypes.object
+    item: PropTypes.object,
+    calendarEventsDataLength: PropTypes.number,
+    dataEvents: PropTypes.array,
 }
 
 
